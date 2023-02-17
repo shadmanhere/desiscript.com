@@ -22,6 +22,10 @@
   flex-wrap: wrap;
 }
 
+.navitems ul:nth-child(2) a {
+  padding-top: 1.3rem;
+}
+
 .navitems li {
   float: left;
 }
@@ -34,7 +38,6 @@
   text-decoration: none;
   font-size: 1.2rem;
   height: 100%;
-
 }
 
 .navitems li a:hover {
@@ -57,5 +60,9 @@
 
   .navitems ul:nth-child(2) {
     justify-content:center;
+  }
+
+  .navitems ul:nth-child(2) a{
+    padding-top: auto;
   }
 }
