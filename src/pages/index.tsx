@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+import 'tw-elements';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function Home() {
         <nav className={styles.navitems}>
           <ul>
             <li>
-              <a className="text-3xl font-bold underline" style={{ fontSize: "1.8rem" }} href="#home">
+              <a style={{ fontSize: "1.8rem" }} href="#home">
                 Desi Script
               </a>
             </li>
