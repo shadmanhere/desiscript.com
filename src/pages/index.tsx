@@ -18,7 +18,7 @@ export default function Home() {
         <nav className={styles.navitems}>
           <ul>
             <li>
-              <a style={{ fontSize: "1.8rem" }} href="#home">
+              <a className="text-3xl font-bold underline" style={{ fontSize: "1.8rem" }} href="#home">
                 Desi Script
               </a>
             </li>
