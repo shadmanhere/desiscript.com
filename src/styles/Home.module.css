@@ -1,3 +1,7 @@
+.brand {
+  font-size:1.8rem;
+}
+
 .navitems {
   display: flex;
 }
@@ -27,6 +31,9 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 1.2rem;
+  height: 100%;
+
 }
 
 .navitems li a:hover {
