@@ -43,7 +43,13 @@ export default function Home() {
           </ul>
         </nav>
       </header>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <section id="home" className={styles.home}>
+          <p>Let&apos;s build your next project</p>
+          <p>Full Stack Developer</p>
+          <p>Hi! My name is Shadman Ali and I can help you create your future product, feature or website. Let&apos;s talk!</p>
+        </section>
+      </main>
     </>
   );
 }

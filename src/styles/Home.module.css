@@ -2,6 +2,12 @@
   font-size:1.8rem;
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .navitems {
   display: flex;
 }
