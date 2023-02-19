@@ -4,8 +4,16 @@
 
 .home {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  text-align: center;
+  height: 200vh;
+  padding: 100px 15px;
+}
+
+.home p:nth-child(1){
+  font-size: 5rem;
+  font-weight: bold;
+
 }
 
 .navitems {
@@ -70,5 +78,11 @@
 
   .navitems ul:nth-child(2) a{
     padding-top: auto;
+  }
+
+  .home p:nth-child(1){
+    font-size: 2.5rem;
+    font-weight: bold;
+  
   }
 }
