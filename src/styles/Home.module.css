@@ -20,7 +20,10 @@
 .home p:nth-child(1){
   font-size: 5rem;
   font-weight: bold;
-
+  animation-name: colorchange;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  color: rgb(229, 234, 219);
 }
 
 .home p:nth-child(3){
@@ -80,6 +83,11 @@
 
 .active {
   background-color: #04AA6D;
+}
+
+@keyframes colorchange {
+  from {color: rgb(229, 234, 219);}
+  to {color: rgb(244, 216, 216);}
 }
 
 @media (max-width: 800px) {
