@@ -6,12 +6,14 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 200vh;
+  height: 100vh;
   padding: 100px 15px;
 }
 
 .header {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/bg.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
   color: white;
 }
 
@@ -23,14 +25,12 @@
 
 .navitems {
   display: flex;
-  opacity: 0.5;
 }
 .navitems ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
   padding-left: 1rem;
   padding-right: 1rem;
 }
