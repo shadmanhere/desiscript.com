@@ -44,6 +44,7 @@ export default function Home() {
         </nav>
       </header>
       <main className={styles.main}>
+        
         <section id="home" className={styles.home}>
           <p>Let&apos;s build your next project</p>
           <p>Full Stack Developer</p>
