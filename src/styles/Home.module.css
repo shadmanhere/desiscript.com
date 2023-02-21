@@ -10,6 +10,11 @@
   padding: 100px 15px;
 }
 
+.header {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/bg.jpg');
+  color: white;
+}
+
 .home p:nth-child(1){
   font-size: 5rem;
   font-weight: bold;
@@ -18,6 +23,7 @@
 
 .navitems {
   display: flex;
+  opacity: 0.5;
 }
 .navitems ul {
   list-style-type: none;

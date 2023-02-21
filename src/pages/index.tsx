@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.header}>
       <Head>
         <title>Home | Desi Script</title>
         <meta name="description" content="Full Stack Developer" />
@@ -47,9 +47,12 @@ export default function Home() {
         <section id="home" className={styles.home}>
           <p>Let&apos;s build your next project</p>
           <p>Full Stack Developer</p>
-          <p>Hi! My name is Shadman Ali and I can help you create your future product, feature or website. Let&apos;s talk!</p>
+          <p>
+            Hi! My name is Shadman Ali and I can help you create your future
+            product, feature or website. Let&apos;s talk!
+          </p>
         </section>
       </main>
-    </>
+    </div>
   );
 }
