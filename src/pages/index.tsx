@@ -52,6 +52,7 @@ export default function Home() {
             Hi! My name is Shadman Ali and I can help you create your future
             product, feature or website. Let&apos;s talk!
           </p>
+          <a href="#contact"><button className={styles.button}>Contact</button></a>
         </section>
       </main>
     </div>
