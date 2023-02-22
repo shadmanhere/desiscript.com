@@ -2,11 +2,28 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-// import 'tw-elements';
+import { useEffect, useState } from "react";
+import TextTransition, { presets } from "react-text-transition";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const TEXTS = [
+  "Full Stack Developer",
+  "Back End Developer",
+  "Front End Developer",
+];
+
 export default function Home() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      2000 // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
     <div className={styles.header}>
       <Head>
@@ -44,15 +61,20 @@ export default function Home() {
         </nav>
       </header>
       <main className={styles.main}>
-        
         <section id="home" className={styles.home}>
           <p>Let&apos;s build your next project</p>
-          <p>Full Stack Developer</p>
+
+          <TextTransition className={styles.animatedText} springConfig={presets.gentle}>
+            {TEXTS[index % TEXTS.length]}
+          </TextTransition>
+
           <p>
             Hi! My name is Shadman Ali and I can help you create your future
             product, feature or website. Let&apos;s talk!
           </p>
-          <a href="#contact"><button className={styles.button}>Contact</button></a>
+          <a href="#contact">
+            <button className={styles.button}>Contact</button>
+          </a>
         </section>
       </main>
     </div>
