@@ -47,6 +47,9 @@ export default function Home() {
               <a href="#home">Home</a>
             </li>
             <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
               <a href="#skills">Skills</a>
             </li>
             <li>
