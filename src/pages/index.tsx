@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from 'next/link'
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
@@ -36,9 +37,9 @@ export default function Home() {
         <nav className={styles.navitems}>
           <ul>
             <li>
-              <a style={{ fontSize: "1.8rem" }} href="#home">
+              <Link style={{ fontSize: "1.8rem" }} href="/">
                 Desi Script
-              </a>
+              </Link>
             </li>
           </ul>
           <ul>
