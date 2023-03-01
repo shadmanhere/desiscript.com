@@ -5,8 +5,8 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +26,7 @@ export default function Home() {
     );
     return () => clearTimeout(intervalId);
   }, []);
+  
 
   return (
     <>
@@ -41,7 +42,7 @@ export default function Home() {
             <ul>
               <li>
                 <Link style={{ fontSize: "1.8rem" }} href="/">
-                <FontAwesomeIcon icon={faCode} /> Desi Script
+                  <FontAwesomeIcon icon={faCode} /> Desi Script
                 </Link>
               </li>
             </ul>
@@ -86,9 +87,126 @@ export default function Home() {
           </a>
         </section>
       </div>
-      <section id="services" className={`container`}>
+      <section id="services" className={styles.services}>
         <h2>Services</h2>
+        <p>
+          I strive to provide quality web-based software and ensure great
+          experiences for all users by:
+        </p>
+        <div className={styles.servicesContainer}>
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <Image
+                  src="/frontend.jpg"
+                  alt="Avatar"
+                  width="300"
+                  height="300"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+                <p style={{ background: "black", color: "white" }}>
+                  Front End Development
+                </p>
+              </div>
+              <div className={styles.flipCardBack}>
+                <p>
+                  Collaborating with other stakeholders and discussing the
+                  needs, design, and functionality of a website or UI for
+                  creating quality mockups and prototypes; ensuring high-quality
+                  graphic standards and brand consistency.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <Image
+                  src="/backend.jpg"
+                  alt="Avatar"
+                  width="300"
+                  height="300"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+                <p style={{ background: "black", color: "white" }}>
+                  Back End Development
+                </p>
+              </div>
+              <div className={styles.flipCardBack}>
+                <p>
+                  Developing and overseeing testing schedules in client-server
+                  environment, addressing various browsers and devices to ensure
+                  that content is displayed as intended and that the site is
+                  functional and secure, modelling data and designing databases.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+      
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <Image
+                  src="/webdesign.png"
+                  alt="Avatar"
+                  width="300"
+                  height="300"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+                <p style={{ background: "black", color: "white" }}>
+                  Web Design
+                </p>
+              </div>
+              <div className={styles.flipCardBack}>
+                <p>
+                  Designing user interfaces for web applications, using standard
+                  HTML/CSS practices and technologies. Creating visual elements
+                  that users see and interact with in web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <Image
+                  src="/hosting.png"
+                  alt="Avatar"
+                  width="300"
+                  height="300"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+                <p style={{ background: "black", color: "white" }}>
+                  Hosting Service Web Analytics
+                </p>
+              </div>
+              <div className={styles.flipCardBack}>
+                <p>
+                  Providing hosting services for web applications and web
+                  analytics to track the performance of the website and its
+                  users.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <button onClick={() => topFunction()} id="myBtn" title="Go to top">Top</button>
     </>
   );
 }
