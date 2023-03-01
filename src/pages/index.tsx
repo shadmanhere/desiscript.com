@@ -5,6 +5,8 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,7 +41,7 @@ export default function Home() {
             <ul>
               <li>
                 <Link style={{ fontSize: "1.8rem" }} href="/">
-                  Desi Script
+                <FontAwesomeIcon icon={faCode} /> Desi Script
                 </Link>
               </li>
             </ul>
