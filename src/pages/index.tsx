@@ -26,7 +26,6 @@ export default function Home() {
     );
     return () => clearTimeout(intervalId);
   }, []);
-  
 
   return (
     <>
@@ -206,7 +205,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <button onClick={() => topFunction()} id="myBtn" title="Go to top">Top</button>
     </>
   );
 }
