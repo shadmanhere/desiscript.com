@@ -1,3 +1,36 @@
+.skills {
+  padding: 20px 100px;
+  background-color: darkgray;
+  padding: 50px 100px;
+}
+
+.skills h2 {
+  font-size: 4.5rem;;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.skills h3 {
+  font-size: 4.5rem;;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.skills > ul{
+  padding: 0px 100px;
+}
+
+.skills > ul ul{
+  padding: 0px 50px;
+}
+
+.skillsContainer{
+  display: flex;
+  margin: 12px 100px;
+  justify-content : center;
+  flex-wrap: wrap;
+}
+
 .brand {
   font-size: 1.8rem;
 }
@@ -12,6 +45,7 @@
   font-weight: 700;
   letter-spacing: 2px;
 }
+
 
 .services p {
   font-size: 2rem;;

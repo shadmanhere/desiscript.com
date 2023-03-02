@@ -148,8 +148,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-      
-      
+
           <div className={styles.flipCard}>
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -203,6 +202,54 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="skills" className={styles.skills}>
+        <h2>Skills and Competencies</h2>
+        <div className={styles.skillsContainer}>
+          <ul>
+            <li>
+              <h3>Front-end</h3>
+              <ul>
+                <li>
+                  HTML/CSS3, JavaScript, ES6 Syntax, DOM manipulation, Ruby,
+                  React framework, Webpack, Redux for state management, Thunks,
+                  CSS frameworks (Bootstrap, TailwindCSS).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Back-end</h3>
+              <ul>
+                <li>
+                  Ruby on Rails, RESTful database API creation and
+                  documentation, PostgreSQL, MySQL, T-SQL, DB performace and
+                  optimization, replication & migration. Standford certificate
+                  in Advanced Topics in SQL.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Design & Tooling</h3>
+              <ul>
+                <li>
+                  Object-Oriented Programming, SOLID, Design Patterns,
+                  Test-Driven Development, Git, Github, Heroku, Netlify, Vercel,
+                  GitHub-flow/git-flow.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Agile / XP</h3>
+              <ul>
+                <li>
+                  Experienced with async & remote collaboration, Standup
+                  meetings, Pair Programming, Unit-testing (TDD, BDD) & Code
+                  Reviews.
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </section>
     </>
