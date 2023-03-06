@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { FaReact, FaDatabase, FaScrewdriver, FaUsers } from "react-icons/fa";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -204,53 +205,59 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="skills" className={styles.skills}>
-        <div className="rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
-          <h2>Skills and Competencies</h2>
+      <section id="skills" className={`${styles.skills} px-20 py-16`}>
+        <div className="rounded-lg bg-neutral-100 py-12 px-32 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
           <div className={styles.skillsContainer}>
-            <ul>
-              <li>
-                <h3>Front-end</h3>
-                <ul>
-                  <li>
-                    HTML/CSS3, JavaScript, ES6 Syntax, DOM manipulation, Ruby,
-                    React framework, Webpack, Redux for state management,
-                    Thunks, CSS frameworks (Bootstrap, TailwindCSS).
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h3>Back-end</h3>
-                <ul>
-                  <li>
-                    Ruby on Rails, RESTful database API creation and
-                    documentation, PostgreSQL, MySQL, T-SQL, DB performace and
-                    optimization, replication & migration. Standford certificate
-                    in Advanced Topics in SQL.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h3>Design & Tooling</h3>
-                <ul>
-                  <li>
-                    Object-Oriented Programming, SOLID, Design Patterns,
-                    Test-Driven Development, Git, Github, Heroku, Netlify,
-                    Vercel, GitHub-flow/git-flow.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h3>Agile / XP</h3>
-                <ul>
-                  <li>
-                    Experienced with async & remote collaboration, Standup
-                    meetings, Pair Programming, Unit-testing (TDD, BDD) & Code
-                    Reviews.
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <h2 className="text-7xl font-bold antialiased">Skills and Competencies</h2>
+
+            <div className="flex items-start mt-10">
+              <FaReact className="mx-4 p-0 mt-0" size="45%" />
+              <div className="flex flex-col">
+                <h3 className="text-6xl mb-4">Front-end</h3>
+                <p className="text-2xl">
+                  HTML/CSS3, JavaScript, ES6 Syntax, DOM manipulation, Ruby,
+                  React framework, Webpack, Redux for state management, Thunks,
+                  CSS frameworks (Bootstrap, TailwindCSS).
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start mt-10">
+              <FaDatabase className="mx-4 p-0 mt-0" size="49%" />
+              <div className="flex flex-col">
+                <h3 className="text-6xl mb-4">Back-end</h3>
+                <p className="text-2xl">
+                  Ruby on Rails, RESTful database API creation and
+                  documentation, PostgreSQL, MySQL, T-SQL, DB performace and
+                  optimization, replication & migration. Standford certificate
+                  in Advanced Topics in SQL.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start mt-10">
+              <FaScrewdriver className="mx-4 p-0 mt-0" size="31%" />
+              <div className="flex flex-col">
+                <h3 className="text-6xl mb-4">Design & Tooling</h3>
+                <p className="text-2xl">
+                  Object-Oriented Programming, SOLID, Design Patterns,
+                  TestDriven Development, Git, Github, Heroku, Netlify, Vercel,
+                  GitHub-flow/git-flow.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start mt-10">
+              <FaUsers className="mx-4 p-0 mt-0" size="30%" />
+              <div className="flex flex-col">
+                <h3 className="text-6xl mb-4">Agile / XP</h3>
+                <p className="text-2xl">
+                  Experienced with async & remote collaboration, Standup
+                  meetings, Pair Programming, Unit-testing (TDD, BDD) & Code
+                  Reviews.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
