@@ -205,10 +205,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="skills" className={`${styles.skills} px-20 py-16`}>
-        <div className="rounded-lg bg-neutral-100 py-12 px-32 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
-          <div className="flex flex-col px-6 justify-content-center flex-wrap">
-            <h2 className="text-7xl font-bold antialiased">
+      <section id="skills" className={`${styles.skills} xs:px-2 md:px-20 py-16`}>
+        <div className="rounded-lg bg-neutral-100 py-12 xs:px-2 md:px-32 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
+          <div className="flex flex-col xs:px-2 md:px-6 justify-content-center flex-wrap">
+            <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
               Skills and Competencies
             </h2>
 
@@ -263,8 +263,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projects" className="px-20 py-16">
-        <h2 className="text-7xl font-bold antialiased">Highlighted Projects</h2>
+      <section id="projects" className="xs:px-4 md:px-20 py-16">
+        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">Highlighted Projects</h2>
       </section>
     </>
   );
