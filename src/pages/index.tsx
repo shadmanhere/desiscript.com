@@ -207,12 +207,14 @@ export default function Home() {
       </section>
       <section id="skills" className={`${styles.skills} px-20 py-16`}>
         <div className="rounded-lg bg-neutral-100 py-12 px-32 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
-          <div className={styles.skillsContainer}>
-            <h2 className="text-7xl font-bold antialiased">Skills and Competencies</h2>
+          <div className="flex flex-col px-6 justify-content-center flex-wrap">
+            <h2 className="text-7xl font-bold antialiased">
+              Skills and Competencies
+            </h2>
 
             <div className="flex items-start mt-10">
               <FaReact className="mx-4 p-0 mt-0" size="45%" />
-              <div className="flex flex-col">
+              <div className="flex flex-col flex-wrap">
                 <h3 className="text-6xl mb-4">Front-end</h3>
                 <p className="text-2xl">
                   HTML/CSS3, JavaScript, ES6 Syntax, DOM manipulation, Ruby,
@@ -260,6 +262,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section id="projects" className="px-20 py-16">
+        <h2 className="text-7xl font-bold antialiased">Highlighted Projects</h2>
       </section>
     </>
   );
