@@ -68,7 +68,7 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <section id="home" className={styles.home}>
+        <section id="home" className={`${styles.home} flex flex-col justify-center items-center xs:h-full md:h-screen text-center py-5`}>
           <h1>Let&apos;s build your next project</h1>
 
           <TextTransition
