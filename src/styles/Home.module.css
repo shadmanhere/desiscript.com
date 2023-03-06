@@ -7,34 +7,12 @@
 }
 
 .services {
-  padding: 20px 100px;
   background-color: lightgrey;
-  padding: 50px 100px;
-}
-.services h2 {
-  font-size: 4.5rem;;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-
-.services p {
-  font-size: 2rem;;
-}
-
-.servicesContainer{
-  display: flex;
-  margin: 12px 100px;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .flipCard {
   background-color: transparent;
-  width: 500px;
-  height: 400px;
   margin-bottom: 100px;
-  /* border: 1px solid black; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
  
 }
