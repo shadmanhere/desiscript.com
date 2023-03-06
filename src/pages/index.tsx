@@ -68,7 +68,10 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <section id="home" className={`${styles.home} flex flex-col justify-center items-center xs:h-full md:h-screen text-center py-5`}>
+        <section
+          id="home"
+          className={`${styles.home} flex flex-col justify-center items-center xs:h-full md:h-screen text-center py-5`}
+        >
           <h1>Let&apos;s build your next project</h1>
 
           <TextTransition
@@ -87,14 +90,19 @@ export default function Home() {
           </a>
         </section>
       </div>
-      <section id="services" className={`${styles.services} xs:px-5 md:px-20 py-16`}>
+      <section
+        id="services"
+        className={`${styles.services} xs:px-5 md:px-20 py-16`}
+      >
         <h2 className="text-7xl font-bold antialiased">Services</h2>
         <p className="text-3xl my-4">
           I strive to provide quality web-based software and ensure great
           experiences for all users by:
         </p>
         <div className="flex justify-between items-center flex-wrap lg:mx-24 xs:flex-col lg:flex-row">
-          <div className={`${styles.flipCard}  xs:w-full xs:h-44 md:w-5/12 lg:h-96`}>
+          <div
+            className={`${styles.flipCard}  xs:w-full xs:h-44 md:w-5/12 lg:h-96`}
+          >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
                 <Image
@@ -107,7 +115,10 @@ export default function Home() {
                     height: "100%",
                   }}
                 />
-                <p className="text-2xl py-2" style={{ background: "black", color: "white" }}>
+                <p
+                  className="text-2xl py-2"
+                  style={{ background: "black", color: "white" }}
+                >
                   Front End Development
                 </p>
               </div>
@@ -122,7 +133,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}>
+          <div
+            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}
+          >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
                 <Image
@@ -135,7 +148,10 @@ export default function Home() {
                     height: "100%",
                   }}
                 />
-                <p className="text-2xl py-2" style={{ background: "black", color: "white" }}>
+                <p
+                  className="text-2xl py-2"
+                  style={{ background: "black", color: "white" }}
+                >
                   Back End Development
                 </p>
               </div>
@@ -150,7 +166,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}>
+          <div
+            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}
+          >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
                 <Image
@@ -163,7 +181,10 @@ export default function Home() {
                     height: "100%",
                   }}
                 />
-                <p className="text-2xl py-2" style={{ background: "black", color: "white" }}>
+                <p
+                  className="text-2xl py-2"
+                  style={{ background: "black", color: "white" }}
+                >
                   Web Design
                 </p>
               </div>
@@ -177,7 +198,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}>
+          <div
+            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}
+          >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
                 <Image
@@ -190,7 +213,10 @@ export default function Home() {
                     height: "100%",
                   }}
                 />
-                <p className="text-2xl py-2" style={{ background: "black", color: "white" }}>
+                <p
+                  className="text-2xl py-2"
+                  style={{ background: "black", color: "white" }}
+                >
                   Hosting Service Web Analytics
                 </p>
               </div>
@@ -205,7 +231,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="skills" className={`${styles.skills} xs:px-2 md:px-20 py-16`}>
+      <section
+        id="skills"
+        className={`${styles.skills} xs:px-2 md:px-20 py-16`}
+      >
         <div className="rounded-lg bg-neutral-100 py-12 xs:px-2 md:px-32 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
           <div className="flex flex-col xs:px-2 md:px-6 justify-content-center flex-wrap">
             <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
@@ -263,8 +292,77 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projects" className="xs:px-4 md:px-20 py-16">
-        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">Highlighted Projects</h2>
+      <section
+        id="projects"
+        className={`${styles.projects} xs:px-4 md:px-20 py-16`}
+      >
+        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
+          Highlighted Projects
+        </h2>
+        <div className="flex flex-wrap justify-center my-9">
+          <div className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-6/12 xs:h-96 lg:h-80`}>
+            <Image
+              src="/images/projects/issuefinder.png"
+              alt="Avatar"
+              width="300"
+              height="300"
+              className={styles.image}
+              style={{ width: "100%", height: "100%" }}
+            />
+            <div className={styles.overlay}>
+              <div className={`${styles.overlayText} text-justify my-2`}>
+                <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white">
+                  Issue-finder
+                </h3>
+                <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                <p className="my-4">
+                  Makes easier open-source collaboration for new devs by
+                  allowing them to search for beginner-friendly issues on
+                  GitHub. Built with React and Redux, uses the GitHub API and
+                  it&apos;s the work of me and other 5 devs. If you&apos;d like
+                  to participate please feel free to fork the repository and
+                  make a pull request!
+                </p>
+                <a
+                  href="https://github.com/voscarmv/issue-finder"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    type="button"
+                    className="mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
+                  duration-150 ease-in-out hover:bg-white hover:text-black
+                  focus:border-neutral-800 focus:text-white focus:outline-none 
+                  focus:ring-0 active:border-white active:text-white dark:border-neutral-900 dark:text-white 
+                  dark:hover:border-neutral-900 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 dark:hover:text-white dark:focus:border-neutral-900 
+                  dark:focus:text-white dark:active:border-neutral-900 dark:active:text-white"
+                    data-te-ripple-init
+                  >
+                    Code
+                  </button>
+                </a>
+                <a
+                  href="https://github-issue-finder.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    type="button"
+                    className="mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
+                  duration-150 ease-in-out hover:bg-white hover:text-black
+                  focus:border-neutral-800 focus:text-white focus:outline-none 
+                  focus:ring-0 active:border-white active:text-white dark:border-neutral-900 dark:text-white 
+                  dark:hover:border-neutral-900 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 dark:hover:text-white dark:focus:border-neutral-900 
+                  dark:focus:text-white dark:active:border-neutral-900 dark:active:text-white"
+                    data-te-ripple-init
+                  >
+                    Live
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
