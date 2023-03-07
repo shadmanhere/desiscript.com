@@ -37,13 +37,18 @@
   object-fit: contain;
 }
 
+.imageCaption {
+  position: absolute;
+  bottom: 8px;
+}
+
 
 .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: transparent;
   opacity:0.95;
   overflow: hidden;
   width: 100%;
@@ -54,6 +59,7 @@
 
 .imageContainer:hover .overlay {
   height: 100%;
+  background-color: black;
 }
 
 .overlayText {

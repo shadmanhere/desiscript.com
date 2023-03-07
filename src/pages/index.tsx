@@ -343,6 +343,7 @@ export default function Home() {
               height="800"
               className={styles.image}
             />
+            <h3 className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}>Issue Finder</h3>
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
                 <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
@@ -411,6 +412,7 @@ export default function Home() {
               height="800"
               className={styles.image}
             />
+            <h3 className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}>Learning Path</h3>
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
                 <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
@@ -473,6 +475,7 @@ export default function Home() {
               height="800"
               className={styles.image}
             />
+            <h3 className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}>The Drink Bank</h3>
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
                 <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
