@@ -7,7 +7,13 @@ import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { FaReact, FaDatabase, FaScrewdriver, FaUsers } from "react-icons/fa";
+import {
+  FaArrowUp,
+  FaReact,
+  FaDatabase,
+  FaScrewdriver,
+  FaUsers,
+} from "react-icons/fa";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +33,31 @@ export default function Home() {
     );
     return () => clearTimeout(intervalId);
   }, []);
+  useEffect(() => {
+    let goTopButton = document.getElementById("goTopButton");
+
+    window.onscroll = function () {
+      scrollFunction(goTopButton);
+    };
+  }, []);
+
+  function scrollFunction(goTopButton: HTMLElement | null) {
+    if (goTopButton) {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        goTopButton.style.display = "block";
+      } else {
+        goTopButton.style.display = "none";
+      }
+    }
+  }
+
+  const goToTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
 
   return (
     <>
@@ -35,6 +66,7 @@ export default function Home() {
           <title>Home | Desi Script</title>
           <meta name="description" content="Full Stack Developer" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#D3D3D3" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <header>
@@ -428,6 +460,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <button
+        onClick={() => goToTop()}
+        id="goTopButton"
+        className={styles.goToTop}
+        title="Go to top"
+      >
+        <FaArrowUp />
+      </button>
     </>
   );
 }
