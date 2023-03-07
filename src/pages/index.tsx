@@ -347,7 +347,7 @@ export default function Home() {
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
                 <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
-                  Issue-finder
+                  Issue finder
                 </h3>
                 <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
                 <p className="my-4">
@@ -416,7 +416,7 @@ export default function Home() {
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
                 <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
-                  Learning-Path
+                  Learning Path
                 </h3>
                 <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
                 <p className="my-4">
