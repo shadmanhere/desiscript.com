@@ -299,19 +299,21 @@ export default function Home() {
         <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
           Highlighted Projects
         </h2>
-        <div className="flex flex-wrap justify-center my-9">
-          <div className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-6/12 xs:h-96 lg:h-80`}>
+        <div className="flex flex-wrap xs:gap-y-6 justify-evenly my-9">
+          {/* issue finder */}
+          <div
+            className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80`}
+          >
             <Image
               src="/images/projects/issuefinder.png"
               alt="Avatar"
-              width="300"
-              height="300"
+              width="800"
+              height="800"
               className={styles.image}
-              style={{ width: "100%", height: "100%" }}
             />
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
-                <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white">
+                <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
                   Issue-finder
                 </h3>
                 <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
@@ -330,7 +332,7 @@ export default function Home() {
                 >
                   <button
                     type="button"
-                    className="mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
+                    className="opacity-100 mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
                   duration-150 ease-in-out hover:bg-white hover:text-black
                   focus:border-neutral-800 focus:text-white focus:outline-none 
                   focus:ring-0 active:border-white active:text-white dark:border-neutral-900 dark:text-white 
@@ -349,6 +351,68 @@ export default function Home() {
                   <button
                     type="button"
                     className="mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
+                  duration-150 ease-in-out hover:bg-white hover:text-black
+                  focus:border-neutral-800 focus:text-white focus:outline-none 
+                  focus:ring-0 active:border-white active:text-white dark:border-neutral-900 dark:text-white 
+                  dark:hover:border-neutral-900 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 dark:hover:text-white dark:focus:border-neutral-900 
+                  dark:focus:text-white dark:active:border-neutral-900 dark:active:text-white"
+                    data-te-ripple-init
+                  >
+                    Live
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* learning path */}
+
+          <div
+            className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80`}
+          >
+            <Image
+              src="/images/projects/learningpath.png"
+              alt="Avatar"
+              width="800"
+              height="800"
+              className={styles.image}
+            />
+            <div className={styles.overlay}>
+              <div className={`${styles.overlayText} text-justify my-2`}>
+                <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
+                  Learning-Path
+                </h3>
+                <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                <p className="my-4">
+                  This project gives learners a clear path to follow to get
+                  skilled in a particular domain.
+                </p>
+                <a
+                  href="https://github.com/shadmanhere/learning-path"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    type="button"
+                    className="mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
+                  duration-150 ease-in-out hover:bg-white hover:text-black
+                  focus:border-neutral-800 focus:text-white focus:outline-none 
+                  focus:ring-0 active:border-white active:text-white dark:border-neutral-900 dark:text-white 
+                  dark:hover:border-neutral-900 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 dark:hover:text-white dark:focus:border-neutral-900 
+                  dark:focus:text-white dark:active:border-neutral-900 dark:active:text-white"
+                    data-te-ripple-init
+                  >
+                    Code
+                  </button>
+                </a>
+                <a
+                  href="https://learningpath.desiscript.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    type="button"
+                    className="opacity-100 mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
                   duration-150 ease-in-out hover:bg-white hover:text-black
                   focus:border-neutral-800 focus:text-white focus:outline-none 
                   focus:ring-0 active:border-white active:text-white dark:border-neutral-900 dark:text-white 
