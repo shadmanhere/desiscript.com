@@ -102,7 +102,7 @@ export default function Home() {
         </header>
         <section
           id="home"
-          className={`${styles.home} flex flex-col justify-center items-center xs:h-full md:h-screen text-center py-5`}
+          className={`${styles.home} flex flex-col justify-center items-center xs:h-full md:h-screen text-center py-5 xs:px-2`}
         >
           <h1>Let&apos;s build your next project</h1>
 
