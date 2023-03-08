@@ -343,7 +343,11 @@ export default function Home() {
               height="800"
               className={styles.image}
             />
-            <h3 className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}>Issue Finder</h3>
+            <h3
+              className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}
+            >
+              Issue Finder
+            </h3>
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
                 <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
@@ -398,7 +402,7 @@ export default function Home() {
             </div>
           </div>
 
-         {/* ends issue finder */}
+          {/* ends issue finder */}
 
           {/* learning path */}
 
@@ -412,7 +416,11 @@ export default function Home() {
               height="800"
               className={styles.image}
             />
-            <h3 className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}>Learning Path</h3>
+            <h3
+              className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}
+            >
+              Learning Path
+            </h3>
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
                 <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
@@ -475,16 +483,18 @@ export default function Home() {
               height="800"
               className={styles.image}
             />
-            <h3 className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}>The Drink Bank</h3>
+            <h3
+              className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}
+            >
+              The Drink Bank
+            </h3>
             <div className={styles.overlay}>
               <div className={`${styles.overlayText} text-justify my-2`}>
                 <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
-                The Drink Bank
+                  The Drink Bank
                 </h3>
                 <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-                <p className="my-4">
-                  Find your favorite drink here.
-                </p>
+                <p className="my-4">Find your favorite drink here.</p>
                 <a
                   href="https://github.com/shadmanhere/drink_bank"
                   target="_blank"
@@ -526,6 +536,16 @@ export default function Home() {
           </div>
           {/* ends drink bank */}
         </div>
+      </section>
+      {/* About us  */}
+      <section id="about" className={`${styles.about} xs:px-4 md:px-20 py-16`}>
+        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased py-16">About Me</h2>
+        <p className="rounded border-8 py-16 px-6 text-2xl shadow-2xl">
+          Passionate about creating beautiful and functional websites. I have a
+          background in engineering. I am open for a full-time position in a
+          socially responsible company that values diversity and inclusion and
+          is committed to improve our world through technology.
+        </p>
       </section>
       <button
         onClick={() => goToTop()}
