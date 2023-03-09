@@ -290,10 +290,9 @@ export default function Home() {
               <div className="flex flex-col">
                 <h3 className="text-6xl mb-4">Back-end</h3>
                 <p className="text-2xl">
-                  Ruby on Rails, RESTful database API creation and
-                  documentation, PostgreSQL, MySQL, T-SQL, DB performace and
-                  optimization, replication & migration. Standford certificate
-                  in Advanced Topics in SQL.
+                  Express, Laravel, RESTful database API creation and
+                  documentation, PostgreSQL, MySQL, DB performace and
+                  optimization, replication & migration.
                 </p>
               </div>
             </div>
