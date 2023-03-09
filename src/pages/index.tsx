@@ -128,16 +128,16 @@ export default function Home() {
       </div>
       <section
         id="services"
-        className={`${styles.services} xs:px-5 md:px-20 py-16`}
+        className={`${styles.services} xs:px-4 md:px-20 py-16`}
       >
-        <h2 className="text-7xl font-bold antialiased">Services</h2>
+        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">Services</h2>
         <p className="text-3xl my-4">
           I strive to provide quality web-based software and ensure great
           experiences for all users by:
         </p>
-        <div className="flex justify-between items-center flex-wrap lg:mx-24 xs:flex-col lg:flex-row">
+        <div className="flex justify-evenly gap-6 flex-wrap">
           <div
-            className={`${styles.flipCard}  xs:w-full xs:h-44 md:w-5/12 lg:h-96`}
+            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-8/12 md:h-72 lg:w-4/12 lg:h-82`}
           >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -159,7 +159,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-3xl xs:my-2 md:my-4">
+                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
                   Collaborating with other stakeholders and discussing the
                   needs, design, and functionality of a website or UI for
                   creating quality mockups and prototypes; ensuring high-quality
@@ -170,7 +170,7 @@ export default function Home() {
           </div>
 
           <div
-            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}
+            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-8/12 md:h-72 lg:w-4/12 lg:h-82`}
           >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -192,7 +192,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-3xl xs:my-2 md:my-4">
+                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
                   Developing and overseeing testing schedules in client-server
                   environment, addressing various browsers and devices to ensure
                   that content is displayed as intended and that the site is
@@ -203,7 +203,7 @@ export default function Home() {
           </div>
 
           <div
-            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}
+            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-8/12 md:h-72 lg:w-4/12 lg:h-82`}
           >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -225,7 +225,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-3xl xs:my-2 md:my-4">
+                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
                   Designing user interfaces for web applications, using standard
                   HTML/CSS practices and technologies. Creating visual elements
                   that users see and interact with in web applications.
@@ -235,7 +235,7 @@ export default function Home() {
           </div>
 
           <div
-            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-5/12 lg:h-96`}
+            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-8/12 md:h-72 lg:w-4/12 lg:h-82`}
           >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -257,7 +257,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-3xl xs:my-2 md:my-4">
+                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
                   Providing hosting services for web applications and web
                   analytics to track the performance of the website and its
                   users.
