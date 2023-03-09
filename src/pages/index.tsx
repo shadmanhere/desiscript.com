@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+
 import {
   FaArrowUp,
   FaReact,
@@ -14,6 +15,8 @@ import {
   FaScrewdriver,
   FaUsers,
 } from "react-icons/fa";
+
+import Contact from '../components/Contact'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -546,6 +549,9 @@ export default function Home() {
           is committed to improve our world through technology.
         </p>
       </section>
+
+      <Contact />
+      
       <button
         onClick={() => goToTop()}
         id="goTopButton"
