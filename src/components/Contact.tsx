@@ -7,12 +7,12 @@ const Contact = () => {
     }
 
   return (
-    <section id="contact" className="flex justify-center xs:px-4 md:px-20 py-16 ">
-      <p className="w-3/12 text-right mr-6 mt-0 mb-2 text-3xl font-medium leading-tight text-primary">
+    <section id="contact" className="flex xs:flex-col md:flex-row justify-center xs:px-4 md:px-20 py-16 ">
+      <p className="px-2 xs:w-full md:w-3/12 text-right mr-6 mt-0 mb-2 text-3xl font-medium leading-tight text-primary">
         I&apos;m always interested in hearing about new projects, so if
         you&apos;d like to chat please get in touch!
       </p>
-      <div className="block w-6/12 rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700">
+      <div className="block xs:w-full md:w-6/12 rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700">
         <form>
           <div className="relative mb-6" data-te-input-wrapper-init>
             <input
