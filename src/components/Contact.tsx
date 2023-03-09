@@ -1,10 +1,39 @@
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
+import axios from "axios";
+import { Oval } from 'react-loading-icons'
 
 const Contact = () => {
-    function handleSubmit(e: FormEvent<HTMLButtonElement>): void {
-        e.preventDefault();
-        console.log("Function not implemented.");
+  
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
+
+  const API = axios.create({
+    withCredentials: true,
+    baseURL: process.env.REACT_APP_BASE_URL,
+  })
+
+  const saveContact = async (name:string, email:string, subject:string,message:string) => {
+    const params = new URLSearchParams();
+    params.append('name',name);
+    params.append('email',email);
+    params.append('message',message);
+    params.append('subject',subject);
+    setLoading(true)
+    return await API.post('/api/contact', params).then(() => setLoading(false));
+  }
+
+  function handleSubmit(e: FormEvent<HTMLButtonElement>): void {
+    e.preventDefault();
+    try{
+      saveContact(name, email, subject, message)
+    } catch(err) {
+      console.log(err)
     }
+  }
 
   return (
     <section id="contact" className="flex xs:flex-col md:flex-row justify-center xs:px-4 md:px-20 py-16 ">
@@ -21,6 +50,7 @@ const Contact = () => {
               id="exampleInput7"
               placeholder="Name"
               name="name"
+              onChange={(e) => setName(e.target.value)}
             />
             <label
               htmlFor="exampleInput7"
@@ -36,6 +66,7 @@ const Contact = () => {
               id="exampleInput8"
               placeholder="Email address"
               name="email"
+              onChange={(e)=> setEmail(e.target.value)}
             />
             <label
               htmlFor="exampleInput8"
@@ -45,12 +76,29 @@ const Contact = () => {
             </label>
           </div>
           <div className="relative mb-6" data-te-input-wrapper-init>
+            <input
+              type="text"
+              className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleInput7"
+              placeholder="Subject"
+              name="suject"
+              onChange={(e) => setSubject(e.target.value)}
+            />
+            <label
+              htmlFor="exampleInput7"
+              className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+            >
+              Subject
+            </label>
+          </div>
+          <div className="relative mb-6" data-te-input-wrapper-init>
             <textarea
               className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlTextarea13"
               rows={3}
               placeholder="Message"
               name="message"
+              onChange={(e)=> setMessage(e.target.value)}
             ></textarea>
             <label
               htmlFor="exampleFormControlTextarea13"
@@ -75,12 +123,17 @@ const Contact = () => {
           </div> */}
           <button
             type="submit"
-            className="w-full rounded bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+            className={`w-full rounded bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg 
+            ${loading ? 'pointer-events-none opacity-75' : '' }}`}
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={(e) => handleSubmit(e)}
           >
-            Send
+            {loading ? (
+                <Oval className='mx-auto' height='1.2rem' strokeWidth='3' />
+              ) : (
+                'Send'
+              )}
           </button>
         </form>
       </div>{" "}
