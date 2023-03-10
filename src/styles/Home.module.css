@@ -233,13 +233,13 @@
 }
 
 .button {
-  background: #a9a9a9;
-  border: #626467 solid 3px;
-  /* backdrop-filter: blur(5px); */
+  background: transparent;
+  border: white solid 3px;
+  backdrop-filter: blur(2px);
   font-size: 1.5rem;
+  font-weight: bold;
   /* width: 100px; */
-  border-radius: 15px;
-  padding: 15px 100px 15px 100px;
+  border-radius: 5px;
 }
 
 .button:hover {
