@@ -1,48 +1,131 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import axios from "axios";
-import { Oval } from 'react-loading-icons'
+import { Oval } from "react-loading-icons";
 
 const Contact = () => {
-  
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [firstRender, setFirstRender] = useState(true);
+
+  const [nameMsg, setNameMsg] = useState("");
+  const [emailMsg, setEmailMsg] = useState("");
+  const [subjectMsg, setSubjectMsg] = useState("");
+  const [messageMsg, setMessageMsg] = useState("");
+
   const [loading, setLoading] = useState(false);
 
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+
+  useEffect(() => {
+    if (!firstRender) validateName();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [name]);
+
+  useEffect(() => {
+    if (!firstRender) validateEmail();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [email]);
+
+  useEffect(() => {
+    if (!firstRender) validateSubject();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [subject]);
+
+  useEffect(() => {
+    if (!firstRender) validateMessage();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [message]);
+
+  useEffect(() => {
+    if (firstRender) setFirstRender(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [firstRender]);
 
   const API = axios.create({
     withCredentials: true,
     baseURL: process.env.REACT_APP_BASE_URL,
-  })
+  });
 
-  const saveContact = async (name:string, email:string, subject:string,message:string) => {
+  const saveContact = async (
+    name: string,
+    email: string,
+    subject: string,
+    message: string
+  ) => {
     const params = new URLSearchParams();
-    params.append('name',name);
-    params.append('email',email);
-    params.append('message',message);
-    params.append('subject',subject);
-    setLoading(true)
-    return await API.post('/api/contact', params).then(() => setLoading(false));
-  }
+    params.append("name", name);
+    params.append("email", email);
+    params.append("message", message);
+    params.append("subject", subject);
+    setLoading(true);
+    setErrorMessage("");
+    setSuccessMessage("");
+    return await API.post("/api/contact", params)
+      .then(({ data }) => {
+        setSuccessMessage(data.message);
+      })
+      .catch((err) => {
+        setErrorMessage(err.response.data.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+  const validateName = () => {
+    if (name === "") setNameMsg("enter first name");
+    else setNameMsg("");
+  };
+
+  const validateEmail = () => {
+    if (email === "") setEmailMsg("enter email");
+    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email))
+      setEmailMsg("enter valid email id");
+    else setEmailMsg("");
+  };
+
+  const validateSubject = () => {
+    if (subject === "") setSubjectMsg("enter subject");
+    else setSubjectMsg("");
+  };
+
+  const validateMessage = () => {
+    if (message === "") setMessageMsg("enter message");
+    else setMessageMsg("");
+  };
 
   function handleSubmit(e: FormEvent<HTMLButtonElement>): void {
     e.preventDefault();
-    try{
-      saveContact(name, email, subject, message)
-    } catch(err) {
-      console.log(err)
+
+    try {
+      saveContact(name, email, subject, message);
+    } catch (err) {
+      console.log(err);
     }
   }
 
   return (
-    <section id="contact" className="flex xs:flex-col md:flex-row justify-center xs:px-4 md:px-20 py-16 ">
+    <section
+      id="contact"
+      className="flex xs:flex-col md:flex-row justify-center xs:px-4 md:px-20 py-16 "
+    >
       <p className="px-2 xs:w-full md:w-3/12 text-right mr-6 mt-0 mb-2 text-3xl font-medium leading-tight text-primary">
         I&apos;m always interested in hearing about new projects, so if
         you&apos;d like to chat please get in touch!
       </p>
       <div className="block xs:w-full md:w-6/12 rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700">
         <form>
+          {nameMsg ? (
+            <span className="text-red-600 block text-right text-base">
+              *{nameMsg}
+            </span>
+          ) : (
+            ""
+          )}
           <div className="relative mb-6" data-te-input-wrapper-init>
             <input
               type="text"
@@ -51,6 +134,8 @@ const Contact = () => {
               placeholder="Name"
               name="name"
               onChange={(e) => setName(e.target.value)}
+              readOnly={loading}
+              onBlur={() => validateName()}
             />
             <label
               htmlFor="exampleInput7"
@@ -59,6 +144,13 @@ const Contact = () => {
               Name
             </label>
           </div>
+          {emailMsg ? (
+            <span className="text-red-600 block text-right text-base">
+              *{emailMsg}
+            </span>
+          ) : (
+            ""
+          )}
           <div className="relative mb-6" data-te-input-wrapper-init>
             <input
               type="email"
@@ -66,7 +158,9 @@ const Contact = () => {
               id="exampleInput8"
               placeholder="Email address"
               name="email"
-              onChange={(e)=> setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
+              readOnly={loading}
+              onBlur={() => validateEmail()}
             />
             <label
               htmlFor="exampleInput8"
@@ -75,6 +169,13 @@ const Contact = () => {
               Email address
             </label>
           </div>
+          {subjectMsg ? (
+            <span className="text-red-600 block text-right text-base">
+              *{subjectMsg}
+            </span>
+          ) : (
+            ""
+          )}
           <div className="relative mb-6" data-te-input-wrapper-init>
             <input
               type="text"
@@ -83,6 +184,8 @@ const Contact = () => {
               placeholder="Subject"
               name="suject"
               onChange={(e) => setSubject(e.target.value)}
+              readOnly={loading}
+              onBlur={() => validateSubject()}
             />
             <label
               htmlFor="exampleInput7"
@@ -91,6 +194,13 @@ const Contact = () => {
               Subject
             </label>
           </div>
+          {messageMsg ? (
+            <span className="text-red-600 block text-right text-base">
+              *{messageMsg}
+            </span>
+          ) : (
+            ""
+          )}
           <div className="relative mb-6" data-te-input-wrapper-init>
             <textarea
               className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
@@ -98,7 +208,9 @@ const Contact = () => {
               rows={3}
               placeholder="Message"
               name="message"
-              onChange={(e)=> setMessage(e.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
+              readOnly={loading}
+              onBlur={() => validateMessage()}
             ></textarea>
             <label
               htmlFor="exampleFormControlTextarea13"
@@ -121,19 +233,45 @@ const Contact = () => {
               Send me a copy of this message
             </label>
           </div> */}
+          {successMessage ? (
+            <span className="text-green-600 block text-right text-xl">
+              *{successMessage}
+            </span>
+          ) : (
+            ""
+          )}
+          {errorMessage ? (
+            <span className="text-red-600 block text-right text-xl">
+              *{errorMessage}
+            </span>
+          ) : (
+            ""
+          )}
           <button
             type="submit"
             className={`w-full rounded bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg 
-            ${loading ? 'pointer-events-none opacity-75' : '' }}`}
+            ${
+              name === "" ||
+              email === "" ||
+              subject === "" ||
+              message === "" ||
+              nameMsg !== "" ||
+              emailMsg !== "" ||
+              subjectMsg !== "" ||
+              messageMsg !== '' ||
+              loading
+                ? "pointer-events-none opacity-75"
+                : ""
+            }}`}
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={(e) => handleSubmit(e)}
           >
             {loading ? (
-                <Oval className='mx-auto' height='1.2rem' strokeWidth='3' />
-              ) : (
-                'Send'
-              )}
+              <Oval className="mx-auto" height="1.2rem" strokeWidth="3" />
+            ) : (
+              "Send"
+            )}
           </button>
         </form>
       </div>{" "}

@@ -45,7 +45,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
   if (req.method === "POST") {
     const data = req.body;
     if (!data || !data.name || !data.email || !data.subject || !data.message) {
-      return res.status(400).send({ success: true, message: "Bad request" });
+      return res.status(400).send({ success: false, message: "Bad request" });
     }
 
     try {
@@ -57,7 +57,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
 
       return res.status(200).json({ success: true, message: "message sent" });
     } catch (err: any) {
-      return res.status(400).json({ success: true, message: err.message });
+      return res.status(400).json({ success: false, message: err.message });
     }
   } else {
     return res.status(400).json({ success: false, message: "Invalid Request" });
