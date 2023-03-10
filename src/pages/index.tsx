@@ -137,7 +137,7 @@ export default function Home() {
         </p>
         <div className="flex justify-evenly gap-6 flex-wrap">
           <div
-            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-8/12 md:h-72 lg:w-4/12 lg:h-82`}
+            className={`${styles.flipCard} xs:w-full md:w-8/12 xs:h-72 lg:w-4/12 lg:h-82`}
           >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -159,7 +159,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
+                <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
                   Collaborating with other stakeholders and discussing the
                   needs, design, and functionality of a website or UI for
                   creating quality mockups and prototypes; ensuring high-quality
@@ -170,7 +170,7 @@ export default function Home() {
           </div>
 
           <div
-            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-8/12 md:h-72 lg:w-4/12 lg:h-82`}
+            className={`${styles.flipCard} xs:w-full md:w-8/12 xs:h-72 lg:w-4/12 lg:h-82`}
           >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -192,7 +192,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
+                <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
                   Developing and overseeing testing schedules in client-server
                   environment, addressing various browsers and devices to ensure
                   that content is displayed as intended and that the site is
@@ -203,7 +203,7 @@ export default function Home() {
           </div>
 
           <div
-            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-8/12 md:h-72 lg:w-4/12 lg:h-82`}
+            className={`${styles.flipCard} xs:w-full md:w-8/12 xs:h-72 lg:w-4/12 lg:h-82`}
           >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -225,7 +225,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
+                <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
                   Designing user interfaces for web applications, using standard
                   HTML/CSS practices and technologies. Creating visual elements
                   that users see and interact with in web applications.
@@ -235,7 +235,7 @@ export default function Home() {
           </div>
 
           <div
-            className={`${styles.flipCard} xs:w-full xs:h-44 md:w-8/12 md:h-72 lg:w-4/12 lg:h-82`}
+            className={`${styles.flipCard} xs:w-full md:w-8/12 xs:h-72 lg:w-4/12 lg:h-82`}
           >
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
@@ -250,14 +250,14 @@ export default function Home() {
                   }}
                 />
                 <p
-                  className="text-2xl py-2"
+                  className="text-xl py-2"
                   style={{ background: "black", color: "white" }}
                 >
                   Hosting Service Web Analytics
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
+                <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
                   Providing hosting services for web applications and web
                   analytics to track the performance of the website and its
                   users.
