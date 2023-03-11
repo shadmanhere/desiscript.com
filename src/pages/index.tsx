@@ -312,7 +312,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.flipCardBack}>
-                <p className="xs:text-base md:text-2xl xs:my-2 md:my-4">
+                <p className="xs:text-base md:text-xl xs:my-2 md:my-4">
                   My responsibilities include developing and managing testing
                   schedules in client-server environments, ensuring that the
                   content is displayed correctly across various browsers and
