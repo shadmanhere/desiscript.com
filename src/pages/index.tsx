@@ -462,7 +462,7 @@ export default function Home() {
         <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
           Highlighted Projects
         </h2>
-        <div className="flex flex-wrap gap-6 justify-evenly my-9">
+        <div className="flex flex-wrap gap-6 gap justify-evenly my-9">
           {/* issue finder */}
           <div
             className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80`}
@@ -485,13 +485,12 @@ export default function Home() {
                   Issue finder
                 </h3>
                 <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-                <p className="my-2 xs:text-sm md:text-base">
-                  Developed a tool using React and Redux, which simplifies
-                  open-source collaboration for novice developers by enabling
-                  them to search for beginner-friendly issues on GitHub. The
-                  tool utilizes the GitHub API and was a collaborative effort
-                  between myself and five other developers. If you would like to
-                  participate, please feel free to fork the repository and
+                <p className="my-2 xs:text-sm md:text-sm">
+                  Created a React-Redux tool that streamlines open-source
+                  collaboration for novice developers by facilitating the search
+                  for beginner-friendly issues on GitHub. Developed in
+                  collaboration with five other developers, the tool employs the
+                  GitHub API. To contribute, kindly fork the repository and
                   submit a pull request.
                 </p>
                 <a

@@ -65,6 +65,11 @@
   height: 0;
   transition: .5s ease;
   border-radius: 15px 50px;
+
+  overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .imageContainer:hover .overlay {
@@ -81,6 +86,11 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overlay::-webkit-scrollbar {
+  display: none;
 }
 
 .skills {
@@ -150,6 +160,15 @@
   padding: 1em;
   height: 100%;
   transform: rotateY(180deg);
+  overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.flipCardBack::-webkit-scrollbar {
+  display: none;
 }
 
 .home {
