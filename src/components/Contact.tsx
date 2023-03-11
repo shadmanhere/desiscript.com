@@ -77,7 +77,7 @@ const Contact = () => {
   };
 
   const validateName = () => {
-    if (name === "") setNameMsg("enter first name");
+    if (name === "") setNameMsg("enter name");
     else setNameMsg("");
   };
 
