@@ -16,7 +16,7 @@ import {
   FaUsers,
 } from "react-icons/fa";
 
-import Contact from '../components/Contact'
+import Contact from "../components/Contact";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -98,7 +98,7 @@ export default function Home() {
               <li>
                 <a href="#about">About</a>
               </li>
-              <li className="underline decoration-double underline-offset-8" >
+              <li className="underline decoration-double underline-offset-8">
                 <a href="#contact">Contact</a>
               </li>
             </ul>
@@ -118,8 +118,8 @@ export default function Home() {
           </TextTransition>
 
           <p>
-            Hi! My name is Shadman Ali and I can help you create your future
-            product, feature or website. Let&apos;s talk!
+            Hi! I&apos;m Shadman Ali and I can assist you in developing your
+            upcoming product, feature, or website. Let&apos;s talk!
           </p>
           <div className="mb-6 xs:justify-end xs:mt-1 md:mt-1 flex md:justify-center float-right">
             <a
@@ -128,7 +128,8 @@ export default function Home() {
               type="button"
               className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
               data-te-ripple-init
-              data-te-ripple-color="light" rel="noreferrer"
+              data-te-ripple-color="light"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +147,8 @@ export default function Home() {
               type="button"
               className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
               data-te-ripple-init
-              data-te-ripple-color="light" rel="noreferrer"
+              data-te-ripple-color="light"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +204,8 @@ export default function Home() {
               type="button"
               className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
               data-te-ripple-init
-              data-te-ripple-color="light" rel="noreferrer"
+              data-te-ripple-color="light"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +223,8 @@ export default function Home() {
               type="button"
               className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
               data-te-ripple-init
-              data-te-ripple-color="light" rel="noreferrer"
+              data-te-ripple-color="light"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -233,7 +237,9 @@ export default function Home() {
             </a>
           </div>
           <a href="#projects">
-            <button className={`${styles.button} px-4 py-2`}>See My Work</button>
+            <button className={`${styles.button} px-4 py-2`}>
+              See My Work
+            </button>
           </a>
         </section>
       </div>
@@ -241,10 +247,12 @@ export default function Home() {
         id="services"
         className={`${styles.services} xs:px-4 md:px-20 py-16`}
       >
-        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">Services</h2>
+        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
+          Services
+        </h2>
         <p className="text-3xl my-4">
-          I strive to provide quality web-based software and ensure great
-          experiences for all users by:
+          My objective is to deliver high-quality web-based software and ensure
+          exceptional user experiences through:
         </p>
         <div className="flex justify-evenly gap-6 flex-wrap">
           <div
@@ -271,10 +279,11 @@ export default function Home() {
               </div>
               <div className={styles.flipCardBack}>
                 <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
-                  Collaborating with other stakeholders and discussing the
-                  needs, design, and functionality of a website or UI for
-                  creating quality mockups and prototypes; ensuring high-quality
-                  graphic standards and brand consistency.
+                  To produce high-quality mockups and prototypes, I collaborate
+                  with other stakeholders to discuss the design, functionality,
+                  and requirements of a website or UI. In doing so, I ensure
+                  that the graphic standards and brand consistency are of a
+                  superior quality.
                 </p>
               </div>
             </div>
@@ -304,10 +313,12 @@ export default function Home() {
               </div>
               <div className={styles.flipCardBack}>
                 <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
-                  Developing and overseeing testing schedules in client-server
-                  environment, addressing various browsers and devices to ensure
-                  that content is displayed as intended and that the site is
-                  functional and secure, modelling data and designing databases.
+                  My responsibilities include developing and managing testing
+                  schedules in client-server environments, ensuring that the
+                  content is displayed correctly across various browsers and
+                  devices while maintaining the security and functionality of
+                  the site. Additionally, I model data and design databases to
+                  ensure optimal performance.
                 </p>
               </div>
             </div>
@@ -369,9 +380,10 @@ export default function Home() {
               </div>
               <div className={styles.flipCardBack}>
                 <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
-                  Providing hosting services for web applications and web
-                  analytics to track the performance of the website and its
-                  users.
+                  My role involves designing user interfaces for web
+                  applications using standard HTML/CSS technologies and
+                  practices. This includes developing the visual elements that
+                  users interact with within web applications.
                 </p>
               </div>
             </div>
@@ -389,36 +401,41 @@ export default function Home() {
             </h2>
 
             <div className="flex items-start mt-10">
-              <FaReact className="mx-4 p-0 mt-0" size="45%" />
+              <FaReact className="mx-4 p-0 mt-0" size="67%" />
               <div className="flex flex-col flex-wrap">
                 <h3 className="text-6xl mb-4">Front-end</h3>
                 <p className="text-2xl">
-                  HTML/CSS3, JavaScript, ES6 Syntax, DOM manipulation, Ruby,
-                  React framework, Webpack, Redux for state management, Thunks,
-                  CSS frameworks (Bootstrap, TailwindCSS).
+                  My proficiencies include HTML5/CSS3, JavaScript, ES6 syntax,
+                  DOM manipulation, as well as working with frameworks such as
+                  Express, Next.js, and React. I am also experienced in Webpack,
+                  Redux for state management, Thunks, and utilizing CSS
+                  frameworks such as Bootstrap and TailwindCSS.
                 </p>
               </div>
             </div>
 
             <div className="flex items-start mt-10">
-              <FaDatabase className="mx-4 p-0 mt-0" size="38%" />
+              <FaDatabase className="mx-4 p-0 mt-0" size="63%" />
               <div className="flex flex-col">
                 <h3 className="text-6xl mb-4">Back-end</h3>
                 <p className="text-2xl">
-                  Express, Laravel, RESTful database API creation and
-                  documentation, PostgreSQL, MySQL, DB performace and
-                  optimization, replication & migration.
+                  I have experience working with Express, Next.js, and Laravel
+                  frameworks, creating RESTful database APIs, and documenting
+                  them. Additionally, I am knowledgeable in PostgreSQL and MySQL
+                  databases, database performance and optimization, as well as
+                  replication and migration.
                 </p>
               </div>
             </div>
 
             <div className="flex items-start mt-10">
-              <FaScrewdriver className="mx-4 p-0 mt-0" size="34%" />
+              <FaScrewdriver className="mx-4 p-0 mt-0" size="42%" />
               <div className="flex flex-col">
                 <h3 className="text-6xl mb-4">Design & Tooling</h3>
                 <p className="text-2xl">
-                  Object-Oriented Programming, SOLID, Design Patterns,
-                  TestDriven Development, Git, Github, Heroku, Netlify, Vercel,
+                  My skillset includes Object-Oriented Programming, SOLID
+                  principles, Design Patterns, Test-Driven Development, and
+                  proficiency in Git, Github, Heroku, Netlify, Vercel, and
                   GitHub-flow/git-flow.
                 </p>
               </div>
@@ -429,9 +446,9 @@ export default function Home() {
               <div className="flex flex-col">
                 <h3 className="text-6xl mb-4">Agile / XP</h3>
                 <p className="text-2xl">
-                  Experienced with async & remote collaboration, Standup
-                  meetings, Pair Programming, Unit-testing (TDD, BDD) & Code
-                  Reviews.
+                  Extensive experience with remote and asynchronous
+                  collaboration, including standup meetings, pair programming,
+                  unit testing (TDD, BDD), and code reviews.
                 </p>
               </div>
             </div>
@@ -468,13 +485,14 @@ export default function Home() {
                   Issue finder
                 </h3>
                 <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-                <p className="my-4">
-                  Makes easier open-source collaboration for new devs by
-                  allowing them to search for beginner-friendly issues on
-                  GitHub. Built with React and Redux, uses the GitHub API and
-                  it&apos;s the work of me and other 5 devs. If you&apos;d like
-                  to participate please feel free to fork the repository and
-                  make a pull request!
+                <p className="my-2 xs:text-sm md:text-base">
+                  Developed a tool using React and Redux, which simplifies
+                  open-source collaboration for novice developers by enabling
+                  them to search for beginner-friendly issues on GitHub. The
+                  tool utilizes the GitHub API and was a collaborative effort
+                  between myself and five other developers. If you would like to
+                  participate, please feel free to fork the repository and
+                  submit a pull request.
                 </p>
                 <a
                   href="https://github.com/voscarmv/issue-finder"
@@ -542,8 +560,10 @@ export default function Home() {
                 </h3>
                 <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
                 <p className="my-4">
-                  This project gives learners a clear path to follow to get
-                  skilled in a particular domain.
+                  The application is a full-stack project built using ReactJS,
+                  TypeScript, and ExpressJS. Its purpose is to provide learners
+                  with a structured and clear path to develop expertise in a
+                  specific domain.
                 </p>
                 <a
                   href="https://github.com/shadmanhere/learning-path"
@@ -608,7 +628,20 @@ export default function Home() {
                   The Drink Bank
                 </h3>
                 <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-                <p className="my-4">Find your favorite drink here.</p>
+                <p className="my-4">
+                  This React application consumes the API from&nbsp;
+                  <a
+                    className="underline underline-offset-2"
+                    href="https://punkapi.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    punkapi
+                  </a>{" "}
+                  and beautifully displays a list of drinks. It includes an
+                  infinite scroll feature, advanced search capabilities, and the
+                  ability to mark favorite items.
+                </p>
                 <a
                   href="https://github.com/shadmanhere/drink_bank"
                   target="_blank"
@@ -653,18 +686,21 @@ export default function Home() {
       </section>
       {/* About us  */}
       <section id="about" className={`${styles.about} xs:px-4 md:px-20 py-16`}>
-        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased py-16">About Me</h2>
+        <h2 className="xs:text-5xl md:text-7xl font-bold antialiased py-16">
+          About Me
+        </h2>
         <p className="rounded border-8 py-16 px-6 text-2xl shadow-2xl">
-          Passionate about creating beautiful and functional websites. I have a
-          background in engineering. I am open for a full-time position in a
-          socially responsible company that values diversity and inclusion and
-          is committed to improve our world through technology.
+          Passionate about developing websites that are both visually appealing
+          and highly functional. With a background in engineering, I am
+          currently seeking a full-time position with a socially responsible
+          company that values diversity and inclusion and is committed to
+          leveraging technology for positive change.
         </p>
       </section>
 
       <Contact />
       <Footer />
-      
+
       <button
         onClick={() => goToTop()}
         id="goTopButton"
