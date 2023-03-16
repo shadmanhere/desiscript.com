@@ -15,7 +15,7 @@ const Skills = () => {
             <div className="flex flex-col flex-wrap">
               <h3 className="text-6xl mb-4">Front-end</h3>
               <p className="text-2xl">
-                My proficiencies include HTML5/CSS3, JavaScript, ES6 syntax, DOM
+                My proficiencies include HTML5/CSS3, JavaScript, TypeScript, ES6 syntax, DOM
                 manipulation, as well as working with frameworks such as
                 Express, Next.js, and React. I am also experienced in Webpack,
                 Redux for state management, Thunks, and utilizing CSS frameworks
