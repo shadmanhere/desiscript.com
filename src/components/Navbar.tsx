@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
   return (
