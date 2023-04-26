@@ -38,7 +38,7 @@ const Services = () => {
               </p>
             </div>
             <div className={styles.flipCardBack}>
-              <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
+              <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4 text-justify">
                 To produce high-quality mockups and prototypes, I collaborate
                 with other stakeholders to discuss the design, functionality,
                 and requirements of a website or UI. In doing so, I ensure that
@@ -72,7 +72,7 @@ const Services = () => {
               </p>
             </div>
             <div className={styles.flipCardBack}>
-              <p className="xs:text-base md:text-xl xs:my-2 md:my-4">
+              <p className="xs:text-base md:text-xl xs:my-2 md:my-4 text-justify">
                 My responsibilities include developing and managing testing
                 schedules in client-server environments, ensuring that the
                 content is displayed correctly across various browsers and
@@ -107,7 +107,7 @@ const Services = () => {
               </p>
             </div>
             <div className={styles.flipCardBack}>
-              <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
+              <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4 text-justify">
                 Designing user interfaces for web applications, using standard
                 HTML/CSS practices and technologies. Creating visual elements
                 that users see and interact with in web applications.
@@ -139,7 +139,7 @@ const Services = () => {
               </p>
             </div>
             <div className={styles.flipCardBack}>
-              <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4">
+              <p className="xs:text-xl md:text-2xl xs:my-2 md:my-4 text-justify">
                 My role involves designing user interfaces for web applications
                 using standard HTML/CSS technologies and practices. This
                 includes developing the visual elements that users interact with
