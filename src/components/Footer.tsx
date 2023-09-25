@@ -1,4 +1,4 @@
-const Footer = ({title}) => {
+const Footer = ({title}:{title:string}) => {
   return (
     <footer className="bg-neutral-700 text-center text-white">
       <div className="mr-4 md:px-6 pt-6">

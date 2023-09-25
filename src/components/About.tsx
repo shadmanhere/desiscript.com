@@ -1,6 +1,6 @@
 import styles from "@/styles/About.module.css";
 
-const About = ({ title, aboutDescription }) => {
+const About = ({ title, aboutDescription }:{title:string; aboutDescription:string}) => {
   return (
     <section id="about" className={`${styles.about} xs:px-4 md:px-20 py-16`}>
       <h2 className="xs:text-5xl md:text-7xl font-bold antialiased py-16">

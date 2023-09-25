@@ -2,7 +2,7 @@ import { FormEvent, useEffect, useState } from "react";
 import axios from "axios";
 import { Oval } from "react-loading-icons";
 
-const Contact = ({description}) => {
+const Contact = ({description}:{description:string}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import styles from "@/styles/Navbar.module.css";
 
-const Navbar = ({ content, brandUrl }) => {
+const Navbar = ({ content, brandUrl }:{ content:string, brandUrl:string }) => {
   return (
     <header>
       <nav className={styles.navitems}>

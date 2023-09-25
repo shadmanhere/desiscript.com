@@ -1,7 +1,19 @@
 import Image from "next/image";
 import styles from "@/styles/Services.module.css";
 
-const Services = ({description, frontEndDescription, backEndDescription, webDesignDescription, hostingDescription}) => {
+const Services = ({
+  description,
+  frontEndDescription,
+  backEndDescription,
+  webDesignDescription,
+  hostingDescription,
+}: {
+  description:string;
+  frontEndDescription:string;
+  backEndDescription:string;
+  webDesignDescription:string;
+  hostingDescription:string;
+}) => {
   return (
     <section
       id="services"
@@ -10,9 +22,7 @@ const Services = ({description, frontEndDescription, backEndDescription, webDesi
       <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
         Services
       </h2>
-      <p className="text-3xl my-4">
-        {description}
-      </p>
+      <p className="text-3xl my-4">{description}</p>
       <div className="flex justify-evenly gap-6 flex-wrap">
         <div
           className={`${styles.flipCard} xs:w-full md:w-8/12 xs:h-72 lg:w-4/12 lg:h-82`}
