@@ -2,14 +2,12 @@ import TextTransition, { presets } from "react-text-transition";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 
-const TEXTS = [
-  "Full Stack Developer",
-  "Back End Developer",
-  "Front End Developer",
-];
 
-const Welcome = () => {
+
+const Welcome = ({animatedTexts, description, buttonTitle}) => {
   const [index, setIndex] = useState(0);
+  const [TEXTS, setTEXTS] = useState([...animatedTexts])
+  // const [description, setDescription] = useState(description)
 
   useEffect(() => {
     const intervalId = setInterval(
@@ -34,8 +32,7 @@ const Welcome = () => {
       </TextTransition>
 
       <p>
-        Hi! I&apos;m Shadman Ali and I can assist you in developing your
-        upcoming product, feature, or website. Let&apos;s talk!
+        {description}
       </p>
       <div className="mb-6 xs:justify-end xs:mt-1 md:mt-1 flex md:justify-center float-right">
         <a
@@ -153,7 +150,7 @@ const Welcome = () => {
         </a>
       </div>
       <a href="#projects">
-        <button className={`${styles.button} px-4 py-2`}>See My Work</button>
+        <button className={`${styles.button} px-4 py-2`}>{buttonTitle}</button>
       </a>
     </section>
   );

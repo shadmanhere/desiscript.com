@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = ({title}) => {
   return (
     <footer className="bg-neutral-700 text-center text-white">
       <div className="mr-4 md:px-6 pt-6">
@@ -134,7 +134,7 @@ const Footer = () => {
           className="mx-2 text-whitehite"
           href="https://tailwind-elements.com/"
         >
-          Shadman | Desi Script
+          {title}
         </a>
       </div>
     </footer>

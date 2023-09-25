@@ -2,7 +2,7 @@ import { FormEvent, useEffect, useState } from "react";
 import axios from "axios";
 import { Oval } from "react-loading-icons";
 
-const Contact = () => {
+const Contact = ({description}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -114,9 +114,7 @@ const Contact = () => {
       className="flex xs:flex-col md:flex-row justify-center xs:px-4 md:px-20 py-16 "
     >
       <p className="px-2 xs:w-full md:w-3/12 text-right mr-6 mt-0 mb-2 text-3xl font-medium leading-tight text-primary">
-        I am always open to exploring new projects and opportunities. Therefore,
-        if you would like to have a conversation, please don&apos;t hesitate to reach
-        out to me.
+        {description}
       </p>
       <div className="block xs:w-full md:w-6/12 rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700">
         {successMessage === "" ? (
