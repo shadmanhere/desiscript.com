@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import styles from "@/styles/Navbar.module.css";
 
-const Navbar = () => {
+const Navbar = ({ content, brandUrl }:{ content:string, brandUrl:string }) => {
   return (
     <header>
       <nav className={styles.navitems}>
         <ul>
           <li>
-            <Link style={{ fontSize: "1.8rem" }} href="/">
-              <FontAwesomeIcon icon={faCode} /> Desi Script
+            <Link style={{ fontSize: "1.8rem" }} href={brandUrl}>
+              <FontAwesomeIcon icon={faCode} /> {content}
             </Link>
           </li>
         </ul>

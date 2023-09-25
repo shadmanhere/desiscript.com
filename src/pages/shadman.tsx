@@ -55,66 +55,78 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Navbar brandUrl="/" content="Desi Script" />
+        <Navbar brandUrl="/shadman" content="Shadman" />
 
-        <Welcome animatedTexts={["Full Stack Development", "Back End Development", "Front End Development"]}
-          description="Hi! We can assist you in developing your
+        <Welcome
+          animatedTexts={[
+            "Full Stack Developer",
+            "Back End Developer",
+            "Front End Developer",
+          ]}
+          description="Hi! I'm Shadman Ali and I can assist you in developing your
           upcoming product, feature, or website. Let's talk!"
-          buttonTitle="See Our Work"
+          buttonTitle="See My Work"
         />
       </div>
-      <Services description = "Our objective is to deliver high-quality web-based software and ensure exceptional user experiences through:"
-        frontEndDescription="To produce high-quality mockups and prototypes, We collaborate
+      <Services
+        description="My objective is to deliver high-quality web-based software and ensure exceptional user experiences through:"
+        frontEndDescription="To produce high-quality mockups and prototypes, I collaborate
         with other stakeholders to discuss the design, functionality,
-        and requirements of a website or UI. In doing so, We ensure that
+        and requirements of a website or UI. In doing so, I ensure that
         the graphic standards and brand consistency are of a superior
         quality."
-        backEndDescription="Our responsibilities include developing and managing testing
+        backEndDescription="My responsibilities include developing and managing testing
         schedules in client-server environments, ensuring that the
         content is displayed correctly across various browsers and
         devices while maintaining the security and functionality of the
-        site. Additionally, We model data and design databases to ensure
+        site. Additionally, I model data and design databases to ensure
         optimal performance."
         webDesignDescription="Designing user interfaces for web applications, using standard
         HTML/CSS practices and technologies. Creating visual elements
         that users see and interact with in web applications."
-        hostingDescription="Our role involves designing user interfaces for web applications
+        hostingDescription="My role involves designing user interfaces for web applications
         using standard HTML/CSS technologies and practices. This
         includes developing the visual elements that users interact with
         within web applications."
       />
-      <Skills 
-       frontEndDescription="Our proficiencies include HTML5/CSS3, JavaScript, TypeScript, ES6 syntax, DOM
+      <Skills
+        frontEndDescription="My proficiencies include HTML5/CSS3, JavaScript, TypeScript, ES6 syntax, DOM
        manipulation, as well as working with frameworks such as
-       Express, Next.js, and React. We are also experienced in Webpack,
+       Express, Next.js, and React. I am also experienced in Webpack,
        Redux for state management, Thunks, and utilizing CSS frameworks
        such as Bootstrap and TailwindCSS."
-       backEndDescription="We have experience working with Express, Next.js, and Laravel
+        backEndDescription="I have experience working with Express, Next.js, and Laravel
        frameworks, creating RESTful database APIs, and documenting
        them. Additionally, I am knowledgeable in PostgreSQL and MySQL
        databases, database performance and optimization, as well as
        replication and migration."
-       designerDescription="Our skillset includes Object-Oriented Programming, SOLID
+        designerDescription="My skillset includes Object-Oriented Programming, SOLID
        principles, Design Patterns, Test-Driven Development, and
        proficiency in Git, Github, Heroku, Netlify, Vercel, and
        GitHub-flow/git-flow."
-       agileDescription="Extensive experience with remote and asynchronous collaboration,
+        agileDescription="Extensive experience with remote and asynchronous collaboration,
        including standup meetings, pair programming, unit testing (TDD,
        BDD), and code reviews."
-       />
+      />
       <Projects />
-      <About title="About Us" 
-        aboutDescription="As a skilled professionals, We are passionate about creating
-        visually stunning websites that offer superior functionality. We are driven by the desire to leverage our skills to develop
-        websites that provide an exceptional user experience and promote
-        engagement. We would be
-        delighted to contribute our expertise and help bring your vision to life."  
+      <About
+        title="About Me"
+        aboutDescription="As a skilled full stack web developer, I am passionate about creating
+      visually stunning websites that offer superior functionality. With a
+      background in engineering, I am currently open to full-time and contract
+      positions with socially responsible companies that value diversity and
+      inclusion and are committed to using technology to create positive
+      change. I am driven by the desire to leverage my skills to develop
+      websites that provide an exceptional user experience and promote
+      engagement. Whether you are looking for a full-time web developer to
+      join your team or seeking a contractor to complete a project, I would be
+      delighted to contribute my expertise and help bring your vision to life."
       />
 
-      <Contact description="We are always open to exploring new projects and opportunities. Therefore,
+      <Contact description="I am always open to exploring new projects and opportunities. Therefore,
         if you would like to have a conversation, please don't hesitate to reach
-        out to us." />
-      <Footer title="Desi Script" />
+        out to me." />
+      <Footer title="Shadman" />
 
       <button
         onClick={() => goToTop()}

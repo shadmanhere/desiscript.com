@@ -2,14 +2,18 @@ import TextTransition, { presets } from "react-text-transition";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 
-const TEXTS = [
-  "Full Stack Developer",
-  "Back End Developer",
-  "Front End Developer",
-];
-
-const Welcome = () => {
+const Welcome = ({
+  animatedTexts,
+  description,
+  buttonTitle,
+}: {
+  animatedTexts:string[];
+  description:string;
+  buttonTitle:string;
+}) => {
   const [index, setIndex] = useState(0);
+  const [TEXTS, setTEXTS] = useState([...animatedTexts]);
+  // const [description, setDescription] = useState(description)
 
   useEffect(() => {
     const intervalId = setInterval(
@@ -18,7 +22,7 @@ const Welcome = () => {
     );
     return () => clearTimeout(intervalId);
   }, []);
-  
+
   return (
     <section
       id="home"
@@ -33,10 +37,7 @@ const Welcome = () => {
         {TEXTS[index % TEXTS.length]}
       </TextTransition>
 
-      <p>
-        Hi! I&apos;m Shadman Ali and I can assist you in developing your
-        upcoming product, feature, or website. Let&apos;s talk!
-      </p>
+      <p>{description}</p>
       <div className="mb-6 xs:justify-end xs:mt-1 md:mt-1 flex md:justify-center float-right">
         <a
           href="https://www.facebook.com/desiscript"
@@ -153,7 +154,7 @@ const Welcome = () => {
         </a>
       </div>
       <a href="#projects">
-        <button className={`${styles.button} px-4 py-2`}>See My Work</button>
+        <button className={`${styles.button} px-4 py-2`}>{buttonTitle}</button>
       </a>
     </section>
   );
