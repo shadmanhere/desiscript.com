@@ -7,7 +7,7 @@ const Projects = () => {
       id="projects"
       className={`${styles.projects} xs:px-4 md:px-20 py-16`}
     >
-      <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
+      <h2 className="text-5xl font-bold antialiased">
         Highlighted Projects
       </h2>
       <div className="flex flex-wrap gap-6 gap justify-evenly my-9">

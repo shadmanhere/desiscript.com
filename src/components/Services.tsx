@@ -19,10 +19,10 @@ const Services = ({
       id="services"
       className={`${styles.services} xs:px-4 md:px-20 py-16`}
     >
-      <h2 className="xs:text-5xl md:text-7xl font-bold antialiased">
+      <h2 className="text-5xl font-bold antialiased">
         Services
       </h2>
-      <p className="text-3xl my-4">{description}</p>
+      <p className="text-2xl my-4">{description}</p>
       <div className="flex justify-evenly gap-6 flex-wrap">
         <div
           className={`${styles.flipCard} xs:w-full md:w-8/12 xs:h-72 lg:w-4/12 lg:h-82`}
