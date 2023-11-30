@@ -1,32 +1,40 @@
-.goToTop {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: transparent; /* Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 3rem; /* Increase font size */
-  font-weight: bold;
+/* New Css for go to top button */
+.goToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #111111;
+  border: none;
+  border-radius: 50%;
+  padding: 9px 10px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 999;
+  opacity: 0.8;
+  visibility: hidden;
 }
 
-.goToTop:hover {
-  color: #555; /* Add a dark-grey background on hover */
+.goToTopBtnVisible {
+  visibility: visible;
 }
 
+.goToTopBtn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.upArrow {
+  fill: white;
+  width: 35px;
+  height: 35px;
+}
 
 .skills {
   background-color: darkgray;
 }
-
+/*
 .home {
-  /* padding: 100px 15px; */
-}
+   padding: 100px 15px; 
+}*/
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -83,7 +91,6 @@
 }
 
 @media (max-width: 996px) {
-
   .home h1 {
     font-size: 2.5rem;
     font-weight: bold;
