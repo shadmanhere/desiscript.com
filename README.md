@@ -56,7 +56,7 @@ Desi Script
   </br>
 - Facebook: [Desi Script](https://www.facebook.com/DesiScript)
   </br>
-- Twitter: [@ShadmanHee](https://twitter.com/ShadmanHere)
+- Twitter: [@ShadmanHere](https://twitter.com/ShadmanHere)
   </br>
 - LinkedIn: [@ShadmanHere](https://www.linkedin.com/in/Shadmanhere)
 
