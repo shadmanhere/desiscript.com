@@ -1,9 +1,9 @@
-
-
 <div align="center">
 
 # :wave: Welcome To My Portfolio
+
 ![Screenshot 2023-03-13 at 01-44-11 Home Desi Script](https://user-images.githubusercontent.com/17983225/224571471-70270180-b574-4b65-8b85-f3f1bc9470e2.png)
+
 <!-- Badges -->
 <p>
   
@@ -29,6 +29,7 @@
 ## 🚀 Live Website
 
 [DesiScript.com](https://www.desiscript.com/)
+
 ## :heart: Contributing
 
 <a href="https://github.com/shadmanhere/desiscript.com/graphs/contributors">
@@ -51,16 +52,17 @@ Contents of the website are &copy; 2023 Desi Script.
 
 Desi Script
 
-Email: ###
-<br/>
-Instagram: [###](https://instagram.com/###)
-<br/>
-Youtube: [###](https://www.youtube.com/###)
+- Website: [DesiScript.com](https://www.desiscript.com/)
+  </br>
+- Facebook: [Desi Script](https://www.facebook.com/DesiScript)
+  </br>
+- Twitter: [@ShadmanHere](https://twitter.com/ShadmanHere)
+  </br>
+- LinkedIn: [@ShadmanHere](https://www.linkedin.com/in/Shadmanhere)
 
 <!-- Acknowledgments -->
 
 ## :gem: Acknowledgements
-
 
 - [Shields.io](https://shields.io/)
 - [Awesome README](https://github.com/matiassingers/awesome-readme)

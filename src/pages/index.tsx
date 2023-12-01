@@ -14,36 +14,11 @@ import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import GoToTop from "@/components/GoToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  useEffect(() => {
-    let goTopButton = document.getElementById("goTopButton");
-
-    window.onscroll = function () {
-      scrollFunction(goTopButton);
-    };
-  }, []);
-
-  function scrollFunction(goTopButton: HTMLElement | null) {
-    if (goTopButton) {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        goTopButton.style.display = "block";
-      } else {
-        goTopButton.style.display = "none";
-      }
-    }
-  }
-
-  const goToTop = () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  };
-
   return (
     <>
       <div className={styles.header}>
@@ -57,73 +32,75 @@ export default function Home() {
 
         <Navbar brandUrl="/" content="Desi Script" />
 
-        <Welcome animatedTexts={["Full Stack Development", "Back End Development", "Front End Development"]}
+        <Welcome
+          animatedTexts={[
+            "Full Stack Development",
+            "Back End Development",
+            "Front End Development",
+          ]}
           description="Hi! We can assist you in developing your
-          upcoming product, feature, or website. Let's talk!"
+              upcoming product, feature, or website. Let's talk!"
           buttonTitle="See Our Work"
         />
       </div>
-      <Services description = "Our objective is to deliver high-quality web-based software and ensure exceptional user experiences through:"
+      <Services
+        description="Our objective is to deliver high-quality web-based software and ensure exceptional user experiences through:"
         frontEndDescription="To produce high-quality mockups and prototypes, We collaborate
-        with other stakeholders to discuss the design, functionality,
-        and requirements of a website or UI. In doing so, We ensure that
-        the graphic standards and brand consistency are of a superior
-        quality."
+            with other stakeholders to discuss the design, functionality,
+            and requirements of a website or UI. In doing so, We ensure that
+            the graphic standards and brand consistency are of a superior
+            quality."
         backEndDescription="Our responsibilities include developing and managing testing
-        schedules in client-server environments, ensuring that the
-        content is displayed correctly across various browsers and
-        devices while maintaining the security and functionality of the
-        site. Additionally, We model data and design databases to ensure
-        optimal performance."
+            schedules in client-server environments, ensuring that the
+            content is displayed correctly across various browsers and
+            devices while maintaining the security and functionality of the
+            site. Additionally, We model data and design databases to ensure
+            optimal performance."
         webDesignDescription="Designing user interfaces for web applications, using standard
-        HTML/CSS practices and technologies. Creating visual elements
-        that users see and interact with in web applications."
+            HTML/CSS practices and technologies. Creating visual elements
+            that users see and interact with in web applications."
         hostingDescription="Our role involves designing user interfaces for web applications
-        using standard HTML/CSS technologies and practices. This
-        includes developing the visual elements that users interact with
-        within web applications."
+            using standard HTML/CSS technologies and practices. This
+            includes developing the visual elements that users interact with
+            within web applications."
       />
-      <Skills 
-       frontEndDescription="Our proficiencies include HTML5/CSS3, JavaScript, TypeScript, ES6 syntax, DOM
-       manipulation, as well as working with frameworks such as
-       Express, Next.js, and React. We are also experienced in Webpack,
-       Redux for state management, Thunks, and utilizing CSS frameworks
-       such as Bootstrap and TailwindCSS."
-       backEndDescription="We have experience working with Express, Next.js, and Laravel
-       frameworks, creating RESTful database APIs, and documenting
-       them. Additionally, I am knowledgeable in PostgreSQL and MySQL
-       databases, database performance and optimization, as well as
-       replication and migration."
-       designerDescription="Our skillset includes Object-Oriented Programming, SOLID
-       principles, Design Patterns, Test-Driven Development, and
-       proficiency in Git, Github, Heroku, Netlify, Vercel, and
-       GitHub-flow/git-flow."
-       agileDescription="Extensive experience with remote and asynchronous collaboration,
-       including standup meetings, pair programming, unit testing (TDD,
-       BDD), and code reviews."
-       />
+      <Skills
+        frontEndDescription="Our proficiencies include HTML5/CSS3, JavaScript, TypeScript, ES6 syntax, DOM
+          manipulation, as well as working with frameworks such as
+          Express, Next.js, and React. We are also experienced in Webpack,
+          Redux for state management, Thunks, and utilizing CSS frameworks
+          such as Bootstrap and TailwindCSS."
+        backEndDescription="We have experience working with Express, Next.js, and Laravel
+          frameworks, creating RESTful database APIs, and documenting
+          them. Additionally, I am knowledgeable in PostgreSQL and MySQL
+          databases, database performance and optimization, as well as
+          replication and migration."
+        designerDescription="Our skillset includes Object-Oriented Programming, SOLID
+          principles, Design Patterns, Test-Driven Development, and
+          proficiency in Git, Github, Heroku, Netlify, Vercel, and
+          GitHub-flow/git-flow."
+        agileDescription="Extensive experience with remote and asynchronous collaboration,
+          including standup meetings, pair programming, unit testing (TDD,
+          BDD), and code reviews."
+      />
       <Projects />
-      <About title="About Us" 
+      <About
+        title="About Us"
         aboutDescription="As a skilled professionals, We are passionate about creating
-        visually stunning websites that offer superior functionality. We are driven by the desire to leverage our skills to develop
-        websites that provide an exceptional user experience and promote
-        engagement. We would be
-        delighted to contribute our expertise and help bring your vision to life."  
+            visually stunning websites that offer superior functionality. We are driven by the desire to leverage our skills to develop
+            websites that provide an exceptional user experience and promote
+            engagement. We would be
+            delighted to contribute our expertise and help bring your vision to life."
       />
 
-      <Contact description="We are always open to exploring new projects and opportunities. Therefore,
-        if you would like to have a conversation, please don't hesitate to reach
-        out to us." />
+      <Contact
+        description="We are always open to exploring new projects and opportunities. Therefore,
+            if you would like to have a conversation, please don't hesitate to reach
+            out to us."
+      />
       <Footer title="Desi Script" />
 
-      <button
-        onClick={() => goToTop()}
-        id="goTopButton"
-        className={styles.goToTop}
-        title="Go to top"
-      >
-        <FaArrowUp />
-      </button>
+      <GoToTop />
     </>
   );
 }
