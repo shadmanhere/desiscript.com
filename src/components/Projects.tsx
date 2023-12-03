@@ -40,7 +40,7 @@ const Projects = () => {
                 a pull request.
               </p>
               <a
-                href="https://github.com/voscarmv/issue-finder"
+                href="https://github.com/shadmanhere/issue-finder"
                 target="_blank"
                 rel="noreferrer"
               >
