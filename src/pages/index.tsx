@@ -72,7 +72,7 @@ export default function Home() {
           such as Bootstrap and TailwindCSS."
         backEndDescription="We have experience working with Express, Next.js, and Laravel
           frameworks, creating RESTful database APIs, and documenting
-          them. Additionally, I am knowledgeable in PostgreSQL and MySQL
+          them. Additionally, We are knowledgeable in PostgreSQL and MySQL
           databases, database performance and optimization, as well as
           replication and migration."
         designerDescription="Our skillset includes Object-Oriented Programming, SOLID
