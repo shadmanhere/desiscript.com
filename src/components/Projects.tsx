@@ -81,6 +81,75 @@ const Projects = () => {
 
         {/* ends issue finder */}
 
+        {/* start chat comp */}
+        <div
+          className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80`}
+        >
+          <Image
+            src="/images/projects/chatcomp.png"
+            alt="Avatar"
+            width="800"
+            height="800"
+            className={styles.image}
+          />
+          <h3
+            className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}
+          >
+            Chat Companion
+          </h3>
+          <div className={styles.overlay}>
+            <div className={`${styles.overlayText} text-justify my-2`}>
+              <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
+                Chat Companion
+              </h3>
+              <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+              <p className="my-2 xs:text-sm md:text-sm">
+                &quot;Chat Comp&quot; is an android app. It empowers you to effortlessly initiate chats on
+                WhatsApp Messenger using any phone number, even if it&quot;s not
+                added to your contacts.
+              </p>
+              <a
+                href="https://github.com/shadmanhere/issue-finder"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {/* <button
+                  type="button"
+                  className="opacity-100 mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
+              duration-150 ease-in-out hover:bg-white hover:text-black
+              focus:border-neutral-800 focus:text-white focus:outline-none 
+              focus:ring-0 active:border-white active:text-white dark:border-neutral-900 dark:text-white 
+              dark:hover:border-neutral-900 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 dark:hover:text-white dark:focus:border-neutral-900 
+              dark:focus:text-white dark:active:border-neutral-900 dark:active:text-white"
+                  data-te-ripple-init
+                >
+                  Code
+                </button> */}
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=org.nativescript.shaadMyCoolApp"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button
+                  type="button"
+                  className="mr-2 inline-block rounded border-2 border-white px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-white bg-black transition 
+              duration-150 ease-in-out hover:bg-white hover:text-black
+              focus:border-neutral-800 focus:text-white focus:outline-none 
+              focus:ring-0 active:border-white active:text-white dark:border-neutral-900 dark:text-white 
+              dark:hover:border-neutral-900 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 dark:hover:text-white dark:focus:border-neutral-900 
+              dark:focus:text-white dark:active:border-neutral-900 dark:active:text-white"
+                  data-te-ripple-init
+                >
+                  Live
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* ends chat comp */}
+
         {/* learning path */}
 
         <div
@@ -252,8 +321,8 @@ const Projects = () => {
               <p className="my-4">
                 This React application uses the context API to manage state
                 across the application. It beautifully displays a list of
-                products in cards. It also has cart section where we can add items,
-                increase its quantity and get total amount calculated.
+                products in cards. It also has cart section where we can add
+                items, increase its quantity and get total amount calculated.
               </p>
               <a
                 href="https://github.com/shadmanhere/e-commerce-site-react"
