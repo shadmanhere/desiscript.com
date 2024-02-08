@@ -112,16 +112,9 @@ export default function PersonalPortfolio() {
       <Projects />
       <About
         title="About Me"
-        aboutDescription="As a skilled full stack web developer, I am passionate about creating
-      visually stunning websites that offer superior functionality. With a
-      background in engineering, I am currently open to full-time and contract
-      positions with socially responsible companies that value diversity and
-      inclusion and are committed to using technology to create positive
-      change. I am driven by the desire to leverage my skills to develop
-      websites that provide an exceptional user experience and promote
-      engagement. Whether you are looking for a full-time web developer to
-      join your team or seeking a contractor to complete a project, I would be
-      delighted to contribute my expertise and help bring your vision to life."
+        aboutDescription="Hello! 👋 I'm a dynamic Full Stack Developer skilled in a variety of technologies including Angular, React, NestJS, ExpressJS, React Native, JavaScript, Python, PHP, TypeScript, and Java. With a passion for crafting seamless user experiences and robust backend systems, I thrive in architecting and implementing innovative solutions across the stack. Whether it's designing captivating frontend interfaces, building scalable APIs, or developing cross-platform mobile applications, I bring a wealth of expertise and dedication to every project.
+
+Let's collaborate 🤝 to bring your vision to life with efficiency and excellence! 💻✨"
       />
 
       <Contact description="I am always open to exploring new projects and opportunities. Therefore,
