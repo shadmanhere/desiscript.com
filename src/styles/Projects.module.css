@@ -3,11 +3,16 @@
   background-color: lightgrey;
 }
 
+.projectsContainer {
+  max-width: 1500px;
+  margin: 50px auto;
+}
 
 .imageContainer {
   position: relative;
   background-color: black;
   border-radius: 15px 50px;
+  max-width: 470px;
 }
 
 .image {
