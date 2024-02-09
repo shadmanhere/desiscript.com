@@ -1,0 +1,13 @@
+.skills {
+  background-color: darkgray;
+}
+
+.skillsContainer {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.skillsContent {
+  max-width: 1000px;
+  margin: auto;
+}

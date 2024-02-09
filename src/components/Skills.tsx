@@ -1,5 +1,5 @@
 import { FaReact, FaDatabase, FaScrewdriver, FaUsers } from "react-icons/fa";
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Skills.module.css";
 
 const Skills = ({
   frontEndDescription,
@@ -14,8 +14,8 @@ const Skills = ({
 }) => {
   return (
     <section id="skills" className={`${styles.skills} xs:px-2 md:px-20 py-16`}>
-      <div className="rounded-lg bg-neutral-100 py-12 xs:px-2 md:px-32 lg:px-52 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
-        <div className="flex flex-col xs:px-2 md:px-6 justify-content-center flex-wrap">
+      <div className={`${styles.skillsContainer} rounded-lg bg-neutral-100 py-12 xs:px-2 md:px-32 lg:px-52 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30`}>
+        <div className={`${styles.skillsContent} flex flex-col xs:px-2 md:px-6 justify-content-center flex-wrap`}>
           <h2 className="text-5xl font-bold antialiased">
             Skills and Competencies
           </h2>
