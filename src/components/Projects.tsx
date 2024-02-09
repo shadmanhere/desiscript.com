@@ -8,7 +8,7 @@ const Projects = () => {
       className={`${styles.projects} xs:px-4 md:px-20 py-16`}
     >
       <h2 className="text-5xl font-bold antialiased">Highlighted Projects</h2>
-      <div className="flex flex-wrap gap-6 gap justify-evenly my-9">
+      <div className={`${styles.projectsContainer} flex flex-wrap gap-6 gap justify-evenly my-9`}>
         {/* issue finder */}
         <div
           className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80`}
