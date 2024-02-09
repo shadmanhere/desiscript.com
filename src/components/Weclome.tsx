@@ -36,7 +36,7 @@ const Welcome = ({
         {TEXTS[index % TEXTS.length]}
       </TextTransition>
 
-      <p className="text-2xl my-4 ">{description}</p>
+      <p>{description}</p>
       <div className="mb-6 xs:justify-end xs:mt-1 md:mt-1 flex md:justify-center float-right">
         <a
           href="https://www.facebook.com/desiscript"
