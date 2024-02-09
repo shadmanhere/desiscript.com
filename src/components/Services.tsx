@@ -23,7 +23,7 @@ const Services = ({
         Services
       </h2>
       <p className="text-2xl my-4">{description}</p>
-      <div className="flex justify-evenly gap-6 flex-wrap">
+      <div className={`${styles.servicesContainer} flex justify-evenly gap-6 flex-wrap`}>
         <div
           className={`${styles.flipCard} xs:w-full md:w-8/12 xs:h-72 lg:w-4/12 lg:h-82`}
         >

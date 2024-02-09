@@ -2,14 +2,16 @@
   background-color: lightgrey;
 }
 
-
+.servicesContainer {
+  margin: 50px auto;
+  max-width: 1500px;
+}
 
 
 .flipCard {
   background-color: transparent;
   /* margin-bottom: 100px; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
- 
 }
 
 /* This container is needed to position the front and back side */
@@ -21,6 +23,7 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  margin: 0 auto;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
