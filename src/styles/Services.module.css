@@ -16,6 +16,7 @@
 .flipCardInner {
   position: relative;
   width: 100%;
+  max-width: 450px;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
