@@ -19,6 +19,13 @@ import GoToTop from "@/components/GoToTop";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function DesiScript() {
+  const socialLinks = {
+    facebook:"https://www.facebook.com/desiscript",
+    linkedin: "https://www.linkedin.com/in/desi-script/",
+    github: "https://github.com/Desi-Script",
+  
+  }
+
   return (
     <>
       <div className={styles.header}>
@@ -41,6 +48,7 @@ export default function DesiScript() {
           description="Hi! We can assist you in developing your
               upcoming product, feature, or website. Let's talk!"
           buttonTitle="See Our Work"
+          socialLinks
         />
       </div>
       <Services

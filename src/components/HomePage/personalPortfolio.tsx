@@ -18,6 +18,7 @@ import GoToTop from "../GoToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export default function PersonalPortfolio() {
   useEffect(() => {
     let goTopButton = document.getElementById("goTopButton");
@@ -45,6 +46,13 @@ export default function PersonalPortfolio() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
+  const socialLinks = {
+    twitter: "https://twitter.com/shadmanhere",
+    linkedin: "https://www.linkedin.com/in/shadmanhere/",
+    github: "https://github.com/shadmanhere",
+  
+  }
+
   return (
     <>
       <div className={styles.header}>
@@ -67,6 +75,7 @@ export default function PersonalPortfolio() {
           description="Hi! I'm Shadman Ali and I can assist you in developing your
           upcoming product, feature, or website. Let's talk!"
           buttonTitle="See My Work"
+          socialLinks
         />
       </div>
       <Services
