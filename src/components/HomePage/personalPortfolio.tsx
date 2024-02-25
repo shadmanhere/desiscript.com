@@ -75,7 +75,7 @@ export default function PersonalPortfolio() {
           description="Hi! I'm Shadman Ali and I can assist you in developing your
           upcoming product, feature, or website. Let's talk!"
           buttonTitle="See My Work"
-          socialLinks
+          socialLinks={socialLinks}
         />
       </div>
       <Services

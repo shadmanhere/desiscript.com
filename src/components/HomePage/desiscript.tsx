@@ -48,7 +48,7 @@ export default function DesiScript() {
           description="Hi! We can assist you in developing your
               upcoming product, feature, or website. Let's talk!"
           buttonTitle="See Our Work"
-          socialLinks
+          socialLinks={socialLinks}
         />
       </div>
       <Services

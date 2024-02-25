@@ -6,11 +6,18 @@ const Welcome = ({
   animatedTexts,
   description,
   buttonTitle,
-  socialLinks,
+  socialLinks
 }: {
   animatedTexts: string[];
   description: string;
   buttonTitle: string;
+  socialLinks: {
+    facebook?:string;
+    twitter?: string,
+    linkedin?: string;
+    github?: string;
+    
+  };
 }) => {
   const [index, setIndex] = useState(0);
   const [TEXTS, setTEXTS] = useState([...animatedTexts]);
@@ -40,7 +47,7 @@ const Welcome = ({
       <p>{description}</p>
       <div className="mb-6 xs:justify-end xs:mt-1 md:mt-1 flex md:justify-center float-right">
         {
-          socialLinks.hasOwnProperty(facebook) && (<a
+          socialLinks.hasOwnProperty('facebook') && (<a
             href={socialLinks.facebook}
             target="_blank"
             type="button"
@@ -61,7 +68,7 @@ const Welcome = ({
         }
 
         {
-          socialLinks.hasOwnProperty(twitter) &&
+          socialLinks.hasOwnProperty('twitter') &&
           (<a
             href={socialLinks.twitter}
             target="_blank"
@@ -83,7 +90,7 @@ const Welcome = ({
         }
 
         {
-          socialLinks.hasOwnProperty(linkedin) &&
+          socialLinks.hasOwnProperty('linkedin') &&
           (<a
             href={socialLinks.linkedin}
             target="_blank"
@@ -104,7 +111,7 @@ const Welcome = ({
           </a>)}
 
         {
-          socialLinks.hasOwnProperty(github) &&
+          socialLinks.hasOwnProperty('github') &&
           (<a
             href={socialLinks.github}
             target="_blank"
