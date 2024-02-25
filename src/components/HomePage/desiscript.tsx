@@ -21,7 +21,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function DesiScript() {
   const socialLinks = {
     facebook:"https://www.facebook.com/desiscript",
-    linkedin: "https://www.linkedin.com/in/desi-script/",
+    linkedin: "https://www.linkedin.com/company/desi-script/",
     github: "https://github.com/Desi-Script",
   
   }
