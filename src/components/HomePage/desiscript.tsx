@@ -106,7 +106,7 @@ export default function DesiScript() {
             if you would like to have a conversation, please don't hesitate to reach
             out to us."
       />
-      <Footer title="Desi Script" />
+      <Footer title="Desi Script" socialLinks={socialLinks} />
 
       <GoToTop />
     </>

@@ -129,7 +129,7 @@ Let's collaborate 🤝 to bring your vision to life with efficiency and excellen
       <Contact description="I am always open to exploring new projects and opportunities. Therefore,
         if you would like to have a conversation, please don't hesitate to reach
         out to me." />
-      <Footer title="Shadman" />
+      <Footer title="Shadman" socialLinks={socialLinks} />
 
       <GoToTop />
     </>
