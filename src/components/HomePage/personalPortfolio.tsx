@@ -50,7 +50,7 @@ export default function PersonalPortfolio() {
     twitter: "https://twitter.com/shadmanhere",
     linkedin: "https://www.linkedin.com/in/shadmanhere/",
     github: "https://github.com/shadmanhere",
-  
+    email: "mailto:shadman.ali@live.co.uk",
   }
 
   return (

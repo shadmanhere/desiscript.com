@@ -23,7 +23,7 @@ export default function DesiScript() {
     facebook:"https://www.facebook.com/desiscript",
     linkedin: "https://www.linkedin.com/company/desi-script/",
     github: "https://github.com/Desi-Script",
-  
+    email: "mailto:shadman.ali@live.co.uk",
   }
 
   return (
