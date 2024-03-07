@@ -103,7 +103,7 @@ const Services = ({
                 className="text-2xl py-2"
                 style={{ background: "black", color: "white" }}
               >
-                Web Design
+                Mobile App Development
               </p>
             </div>
             <div className={styles.flipCardBack}>

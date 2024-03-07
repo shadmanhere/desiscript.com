@@ -53,24 +53,15 @@ export default function DesiScript() {
       </div>
       <Services
         description="Our objective is to deliver high-quality web-based software and ensure exceptional user experiences through:"
-        frontEndDescription="To produce high-quality mockups and prototypes, We collaborate
-            with other stakeholders to discuss the design, functionality,
-            and requirements of a website or UI. In doing so, We ensure that
-            the graphic standards and brand consistency are of a superior
-            quality."
+        frontEndDescription="Crafting user interfaces for web applications utilizing standard HTML/CSS/JS methodologies and technologies. Generating visual components that users engage with and interact within applications."
         backEndDescription="Our responsibilities include developing and managing testing
             schedules in client-server environments, ensuring that the
             content is displayed correctly across various browsers and
             devices while maintaining the security and functionality of the
             site. Additionally, We model data and design databases to ensure
             optimal performance."
-        webDesignDescription="Designing user interfaces for web applications, using standard
-            HTML/CSS practices and technologies. Creating visual elements
-            that users see and interact with in web applications."
-        hostingDescription="Our role involves designing user interfaces for web applications
-            using standard HTML/CSS technologies and practices. This
-            includes developing the visual elements that users interact with
-            within web applications."
+        webDesignDescription="Developing user interfaces for mobile applications, employing standard HTML/CSS/JS practices and technologies. Crafting visual components that users view and engage with within the applications."
+        hostingDescription="We are responsible for website hosting and ensuring its online presence."
       />
       <Skills
         frontEndDescription="Our proficiencies include HTML5/CSS3, JavaScript, TypeScript, ES6 syntax, DOM
