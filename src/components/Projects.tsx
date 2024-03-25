@@ -1,7 +1,7 @@
 import styles from "@/styles/Projects.module.css";
 import Image from "next/image";
 
-const Projects = () => {
+const Projects = ({ hidden }:any) => {
   return (
     <section
       id="projects"
@@ -11,7 +11,7 @@ const Projects = () => {
       <div className={`${styles.projectsContainer} flex flex-wrap gap-6 gap justify-evenly my-9`}>
         {/* Image Editor */}
         <div
-          className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80`}
+          className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80 ${ hidden?.imageditor && 'hidden'}`}
         >
           <Image
             src="/images/projects/image_gen.png"

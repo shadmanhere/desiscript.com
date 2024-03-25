@@ -109,7 +109,9 @@ export default function PersonalPortfolio() {
        including standup meetings, pair programming, unit testing (TDD,
        BDD), and code reviews."
       />
-      <Projects />
+      <Projects hidden = {
+        {imageditor: true}
+      }/>
       <About
         title="About Me"
         aboutDescription="Hello! 👋 I'm a dynamic Full Stack Developer skilled in a variety of technologies including Angular, React, NestJS, ExpressJS, React Native, JavaScript, Python, PHP, TypeScript, and Java. With a passion for crafting seamless user experiences and robust backend systems, I thrive in architecting and implementing innovative solutions across the stack. Whether it's designing captivating frontend interfaces, building scalable APIs, or developing cross-platform mobile applications, I bring a wealth of expertise and dedication to every project.

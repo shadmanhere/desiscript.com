@@ -82,7 +82,7 @@ export default function DesiScript() {
           including standup meetings, pair programming, unit testing (TDD,
           BDD), and code reviews."
       />
-      <Projects />
+      <Projects hidden = {{}}/>
       <About
         title="About Us"
         aboutDescription="As a skilled professionals, We are passionate about creating
