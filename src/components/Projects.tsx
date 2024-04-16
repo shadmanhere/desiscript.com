@@ -246,7 +246,7 @@ const Projects = ({ hidden }:any) => {
                 </button>
               </a>
               <a
-                href="https://learningpath.desiscript.com/"
+                href="https://www.youtube.com/watch?v=378Rc1IYh5E"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -260,7 +260,7 @@ const Projects = ({ hidden }:any) => {
               dark:focus:text-white dark:active:border-neutral-900 dark:active:text-white"
                   data-te-ripple-init
                 >
-                  Live
+                  Demo
                 </button>
               </a>
             </div>
