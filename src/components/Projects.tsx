@@ -11,10 +11,10 @@ const Projects = ({ hidden }:any) => {
       <div className={`${styles.projectsContainer} flex flex-wrap gap-6 gap justify-evenly my-9`}>
         {/* Image Editor */}
         <div
-          className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80 ${ hidden?.imageditor && 'hidden'}`}
+          className={`${styles.imageContainer} xs:w-full md:w-8/12 lg:w-4/12 xs:h-96 lg:h-80 ${ hidden?.interview && 'hidden'}`}
         >
           <Image
-            src="/images/projects/image_gen.png"
+            src="/images/projects/interview.png"
             alt="Avatar"
             width="800"
             height="800"
@@ -23,19 +23,19 @@ const Projects = ({ hidden }:any) => {
           <h3
             className={`${styles.imageCaption} text-white text-3xl font-bold w-full text-center`}
           >
-            AI Image Editor
+            AI Interview
           </h3>
           <div className={styles.overlay}>
             <div className={`${styles.overlayText} text-justify my-2`}>
               <h3 className="mt-0 mb-2 text-3xl font-bold leading-tight text-white opacity-100">
-                AI Image Editor
+                AI Interview
               </h3>
               <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
               <p className="my-2 xs:text-sm md:text-sm">
-              Built with Next.js and MongoDB, this platform enables image editing leveraging Cloudinary AI. Additionally, it offers user authentication and seamless payment processing through Stripe integration.
+                This platform, crafted using Next.js, Prisma, and PostgreSQL, facilitates interview practice using AI. It also provides user authentication and smooth payment processing via Stripe integration.
               </p>
               <a
-                href="https://image-gen-ai-ten.vercel.app/"
+                href="https://apps.desiscript.com/interview"
                 target="_blank"
                 rel="noreferrer"
               >
