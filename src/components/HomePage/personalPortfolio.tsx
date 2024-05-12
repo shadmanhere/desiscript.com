@@ -15,6 +15,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import GoToTop from "../GoToTop";
+import ContactBar from "../ContactBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,7 +64,7 @@ export default function PersonalPortfolio() {
           <meta name="theme-color" content="#D3D3D3" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
+        <ContactBar />
         <Navbar brandUrl="/" content="Shadman" />
 
         <Welcome
