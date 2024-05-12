@@ -1,0 +1,16 @@
+.contactbar {
+  background-color: #000;
+  padding: 2px 18px;
+}
+
+.contactbar li:hover {
+  background-color: #666769;
+}
+.contactbar li {
+  padding: 5px 10px;
+}
+
+.contactbar ul {
+  display: flex;
+  gap: 0.5rem;
+}
